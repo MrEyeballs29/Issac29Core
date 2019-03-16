@@ -1,0 +1,6 @@
+{
+    "parent": "item/handheld",
+	"textures": {
+	    "layer0": "i29c:items/gold_rod"
+	}
+}
