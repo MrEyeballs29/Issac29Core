@@ -2,16 +2,16 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:stick"
+      "i29c:example"
     ]
   },
   "criteria": {
-    "has_planks": {
+    "has_stick": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "i29c:planks"
+            "item": "i29c:stick"
           }
         ]
       }
@@ -19,13 +19,13 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "minecraft:stick"
+        "recipe": "i29c:example"
       }
     }
   },
   "requirements": [
     [
-      "has_planks",
+      "has_stick",
       "has_the_recipe"
     ]
   ]
