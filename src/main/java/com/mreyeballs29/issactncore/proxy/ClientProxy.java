@@ -19,7 +19,6 @@ public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void preInit() {
-		super.preInit();
 		RenderingRegistry.registerEntityRenderingHandler(EntityFallingPowder.class, new Factory());
 	}
 	
