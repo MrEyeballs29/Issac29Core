@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "i29c:blocks/stone_blue_schist_smooth"
-    }
-}

@@ -1,7 +1,0 @@
-{
-    "parent": "block/cube_column",
-    "textures": {
-        "end": "i29c:blocks/log_top",
-        "side": "i29c:blocks/log"
-    }
-}

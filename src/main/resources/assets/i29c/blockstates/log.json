@@ -1,8 +1,0 @@
-{
-    "variants": {
-        "axis=y":  { "model": "i29c:log" },
-        "axis=z":   { "model": "i29c:log", "x": 90 },
-        "axis=x":   { "model": "i29c:log", "x": 90, "y": 90 },
-        "axis=none": { "model": "i29c:bark" }
-    }
-}
