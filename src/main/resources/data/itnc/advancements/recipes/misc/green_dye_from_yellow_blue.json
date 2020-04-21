@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:green_dye_from_yellow_blue"
+    ]
+  },
+  "criteria": {
+    "has_blue_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:blue_dye"
+          }
+        ]
+      }
+    },
+    "has_yellow_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:yellow_dye"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:green_dye_from_yellow_blue"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_blue_dye",
+      "has_yellow_dye",
+      "has_the_recipe"
+    ]
+  ]
+}

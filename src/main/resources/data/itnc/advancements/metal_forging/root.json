@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:furnace"
+		},
+		"title": {
+			"translate": "advancements.metal_forging.root.title"
+		},
+		"description": {
+			"translate": "advancements.metal_forging.root.description"
+		},
+		"frame": "task",
+		"show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "itnc:textures/gui/advancements/backgrounds/metal.png"
+	},
+	"criteria": {
+    	"furnace": {
+    		"trigger": "minecraft:inventory_changed",
+      		"conditions": {
+        		"items": [
+          			{
+            			"item": "minecraft:furnace"
+          			}
+        		]
+			}
+   	 	}
+  	},
+  	"requirements": [
+    	[
+      		"furnace"
+    	]
+  	]
+}

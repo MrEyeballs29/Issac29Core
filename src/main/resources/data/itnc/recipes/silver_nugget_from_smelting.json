@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "itnc:silver_pickaxe"
+    },
+    {
+      "item": "itnc:silver_shovel"
+    },
+    {
+      "item": "itnc:silver_axe"
+    },
+    {
+      "item": "itnc:silver_hoe"
+    },
+    {
+      "item": "itnc:silver_sword"
+    },
+    {
+      "item": "itnc:silver_helmet"
+    },
+    {
+      "item": "itnc:silver_chestplate"
+    },
+    {
+      "item": "itnc:silver_leggings"
+    },
+    {
+      "item": "itnc:silver_boots"
+    },
+    {
+      "item": "itnc:silver_horse_armor"
+    }
+  ],
+  "result": "itnc:silver_nugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

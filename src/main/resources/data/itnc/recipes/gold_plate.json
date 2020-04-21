@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XX"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:ingots/gold"
+    }
+  },
+  "result": {
+    "item": "itnc:gold_plate",
+    "count": 2
+  }
+}

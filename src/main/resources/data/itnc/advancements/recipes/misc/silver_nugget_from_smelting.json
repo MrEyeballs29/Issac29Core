@@ -1,0 +1,131 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:silver_nugget_from_smelting"
+    ]
+  },
+  "criteria": {
+    "has_silver_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_pickaxe"
+          }
+        ]
+      }
+    },
+    "has_silver_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_shovel"
+          }
+        ]
+      }
+    },
+    "has_silver_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_axe"
+          }
+        ]
+      }
+    },
+    "has_silver_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_hoe"
+          }
+        ]
+      }
+    },
+    "has_silver_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_sword"
+          }
+        ]
+      }
+    },
+    "has_silver_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_helmet"
+          }
+        ]
+      }
+    },
+    "has_silver_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_chestplate"
+          }
+        ]
+      }
+    },
+    "has_silver_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_leggings"
+          }
+        ]
+      }
+    },
+    "has_silver_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_boots"
+          }
+        ]
+      }
+    },
+    "has_silver_horse_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_horse_armor"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:silver_nugget_from_smelting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_silver_pickaxe",
+      "has_silver_shovel",
+      "has_silver_axe",
+      "has_silver_hoe",
+      "has_silver_sword",
+      "has_silver_helmet",
+      "has_silver_chestplate",
+      "has_silver_leggings",
+      "has_silver_boots",
+      "has_silver_horse_armor",
+      "has_the_recipe"
+    ]
+  ]
+}

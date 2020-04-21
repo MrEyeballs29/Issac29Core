@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "type=bottom": { "model": "itnc:block/polished_stone_slab" },
+        "type=top": { "model": "itnc:block/polished_stone_slab_top" },
+        "type=double": { "model": "itnc:block/polished_stone" }
+    }
+}

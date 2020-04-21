@@ -1,0 +1,54 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:brown_dye_from_red_yellow_black"
+    ]
+  },
+  "criteria": {
+    "has_black_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:black_dye"
+          }
+        ]
+      }
+    },
+    "has_yellow_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:yellow_dye"
+          }
+        ]
+      }
+    },
+    "has_red_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:red_dye"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:brown_dye_from_red_yellow_black"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_black_dye",
+      "has_yellow_dye",
+      "has_red_dye",
+      "has_the_recipe"
+    ]
+  ]
+}

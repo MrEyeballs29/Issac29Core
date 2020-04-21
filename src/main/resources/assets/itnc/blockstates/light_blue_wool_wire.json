@@ -1,0 +1,23 @@
+{
+    "multipart": [
+        {"apply": { "model": "itnc:block/light_blue_wool_wire_center" }},
+        {   "when": { "north": true },
+            "apply": { "model": "itnc:block/light_blue_wool_wire_side" }
+        },
+        {   "when": { "east": true },
+            "apply": { "model": "itnc:block/light_blue_wool_wire_side", "y": 90, "uvlock": true }
+        },
+        {   "when": { "south": true },
+            "apply": { "model": "itnc:block/light_blue_wool_wire_side", "y": 180, "uvlock": true }
+        },
+        {   "when": { "west": true },
+            "apply": { "model": "itnc:block/light_blue_wool_wire_side", "y": 270, "uvlock": true }
+        },
+        {   "when": { "up": true },
+            "apply": { "model": "itnc:block/light_blue_wool_wire_side", "x": 270, "uvlock": true }
+        },
+        {   "when": { "down": true },
+            "apply": { "model": "itnc:block/light_blue_wool_wire_side", "x": 90, "uvlock": true }
+        }
+    ]
+}

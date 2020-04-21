@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "itnc:lignite_ore"
+  },
+  "result": "itnc:lignite",
+  "experience": 0.1,
+  "cookingtime": 100
+}

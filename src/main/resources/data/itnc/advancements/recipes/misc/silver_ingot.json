@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:silver_ingot"
+    ]
+  },
+  "criteria": {
+    "has_silver_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_ore"
+          }
+        ]
+      }
+    },
+    "has_end_silver_ore": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:end_silver_ore"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:silver_ingot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_silver_ore",
+      "has_end_silver_ore",
+      "has_the_recipe"
+    ]
+  ]
+}

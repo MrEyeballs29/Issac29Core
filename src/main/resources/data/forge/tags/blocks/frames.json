@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#forge:frames/iron",
+    "#forge:frames/gold",
+    "#forge:frames/copper"
+  ]
+}

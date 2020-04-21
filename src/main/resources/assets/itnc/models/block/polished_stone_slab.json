@@ -1,0 +1,8 @@
+{
+    "parent": "block/slab",
+    "textures": {
+        "bottom": "itnc:block/polished_stone",
+        "top": "itnc:block/polished_stone",
+        "side": "itnc:block/polished_stone"
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "itnc:copper_ore",
+    "itnc:nether_copper_ore"
+  ]
+}

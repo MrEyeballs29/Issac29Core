@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:lignite_block"
+    ]
+  },
+  "criteria": {
+    "has_lignite_coal": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lignite"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:lignite_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lignite_coal",
+      "has_the_recipe"
+    ]
+  ]
+}

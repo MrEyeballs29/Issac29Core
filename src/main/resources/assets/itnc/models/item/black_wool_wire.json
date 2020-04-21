@@ -1,0 +1,6 @@
+{
+   "parent": "itnc:block/wire_inventory",
+   "textures": {
+      "wire": "itnc:block/black_wool_wire"
+   }
+}

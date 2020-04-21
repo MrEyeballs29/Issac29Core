@@ -1,0 +1,6 @@
+{
+   "parent": "itnc:block/wire_side",
+   "textures": {
+      "wire": "itnc:block/white_wool_wire"
+   }
+}

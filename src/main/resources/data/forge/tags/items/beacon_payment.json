@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:emerald",
+    "minecraft:diamond",
+    "minecraft:gold_ingot",
+    "minecraft:iron_ingot",
+    "itnc:copper_ingot",
+    "itnc:tin_ingot",
+    "itnc:silver_ingot"
+  ]
+}

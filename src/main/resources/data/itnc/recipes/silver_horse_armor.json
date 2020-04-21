@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "XXX",
+    "# #"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:leather"
+    },
+    "#": {
+      "item": "itnc:silver_ingot"
+    }
+  },
+  "result": {
+    "item": "itnc:silver_horse_armor"
+  }
+}
