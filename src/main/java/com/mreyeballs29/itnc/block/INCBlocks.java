@@ -40,6 +40,7 @@ public class INCBlocks {
 	public static final Block SILVER_FRAME = new FrameBlock(Properties.from(SILVER_BLOCK).hardnessAndResistance(2.0F, 3.0F).notSolid()).setRegistryName("itnc", "silver_frame");
 	public static final Block LEAD_ORE = create(Material.ROCK, 3.0F, 1, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "lead_ore"));
 	public static final Block LEAD_BLOCK = new BeaconBaseBlock(Properties.create(Material.IRON, MaterialColor.PURPLE_TERRACOTTA).hardnessAndResistance(5.0F, 6.0F).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)).setRegistryName("itnc", "lead_block");
+	public static final Block LEAD_FRAME = new BeaconBaseBlock(Properties.from(LEAD_BLOCK).hardnessAndResistance(2.5F, 3.0F).notSolid()).setRegistryName("itnc", "lead_frame");
 	public static final Block LIGNITE_ORE = createOre(Material.ROCK, 3.0F, 3.0F, 0, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "lignite_ore"), 0, 2);
 	public static final Block LIGNITE_BLOCK = create(Material.ROCK, MaterialColor.BROWN_TERRACOTTA, 3.5F, 6.0F, 0, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "lignite_block"));
 	public static final Block OILSHALE_ORE = new FallingExpBlock(Properties.from(Blocks.SAND).hardnessAndResistance(0.75F), 1, 3, 2171176, 14406560).setRegistryName("itnc", "oilshale_ore");
@@ -85,6 +86,7 @@ public class INCBlocks {
 		LIST.add(COPPER_FRAME);
 		LIST.add(TIN_FRAME);
 		LIST.add(SILVER_FRAME);
+		LIST.add(LEAD_FRAME);
 		LIST.add(NETHER_IRON_ORE);
 		LIST.add(NETHER_GOLD_ORE);
 		LIST.add(NETHER_COPPER_ORE);

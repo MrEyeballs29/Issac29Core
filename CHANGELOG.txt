@@ -1,0 +1,13 @@
+Version 1.0 (The Intial Setup)
+- Added Copper, Tin, Silver, and Lead as part of the metals
+- Added Polished Stone and Slab to Enhance Decorations.
+- Added Recipes for Brown and Green Dye.
+- Added Oilshale Ore (Currently unused)
+- Added Lignite Coal (Weaker but very common to find)
+- Added Metal Plates (Used with iron and gold only)
+- Added Metal Frames (Recipe Unobtainable)
+- Added Wool Fibers (Registry Name currently incorrect)
+- Added Torch Recipe (Yields 2 instead of 4)
+- Changed Stone Bricks Recipe
+- Changed Weighted Pressure Plate Recipe
+- All metals now support Beacon Base and Payment.

@@ -5,6 +5,7 @@
     "#forge:frames/gold",
     "#forge:frames/copper",
     "#forge:frames/tin",
-    "#forge:frames/silver"
+    "#forge:frames/silver",
+    "#forge:frames/lead"
   ]
 }

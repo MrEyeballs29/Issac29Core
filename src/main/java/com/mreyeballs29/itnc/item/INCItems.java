@@ -49,6 +49,7 @@ public class INCItems {
 	public static final Item SILVER_FRAME = importBlock(INCBlocks.SILVER_FRAME, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "silver_frame"));
 	public static final Item LEAD_ORE = importBlock(INCBlocks.LEAD_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "lead_ore"));
 	public static final Item LEAD_BLOCK = importBlock(INCBlocks.LEAD_BLOCK, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "lead_block"));
+	public static final Item LEAD_FRAME = importBlock(INCBlocks.LEAD_FRAME, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "lead_frame"));
 	public static final Item LIGNITE_ORE = importBlock(INCBlocks.LIGNITE_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "lignite_ore"));
 	public static final Item LIGNITE_BLOCK = importFuelBlock(INCBlocks.LIGNITE_BLOCK, ItemGroup.BUILDING_BLOCKS, 4000, new ResourceLocation("itnc", "lignite_block"));
 	public static final Item OILSHALE_ORE = importBlock(INCBlocks.OILSHALE_ORE, ItemGroup.BUILDING_BLOCKS);
@@ -134,6 +135,7 @@ public class INCItems {
 		BLOCK.add(COPPER_FRAME);
 		BLOCK.add(TIN_FRAME);
 		BLOCK.add(SILVER_FRAME);
+		BLOCK.add(LEAD_FRAME);
 		BLOCK.add(NETHER_IRON_ORE);
 		BLOCK.add(NETHER_GOLD_ORE);
 		BLOCK.add(NETHER_COPPER_ORE);

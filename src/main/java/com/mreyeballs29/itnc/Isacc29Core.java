@@ -63,5 +63,6 @@ public class Isacc29Core {
 		RenderTypeLookup.setRenderLayer(INCBlocks.COPPER_FRAME, RenderType.getCutoutMipped());
 		RenderTypeLookup.setRenderLayer(INCBlocks.TIN_FRAME, RenderType.getCutoutMipped());
 		RenderTypeLookup.setRenderLayer(INCBlocks.SILVER_FRAME, RenderType.getCutoutMipped());
+		RenderTypeLookup.setRenderLayer(INCBlocks.LEAD_FRAME, RenderType.getCutoutMipped());
 	}
 }
