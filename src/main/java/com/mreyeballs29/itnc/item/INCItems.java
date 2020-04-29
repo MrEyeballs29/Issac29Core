@@ -110,6 +110,7 @@ public class INCItems {
 	public static final Item OILSHALE_DUST =new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName("itnc", "oilshale_dust");
 	public static final Item LEAD_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_ingot"));
 	public static final Item LEAD_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_nugget"));
+	public static final Item LEAD_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_plate"));
 	
 	/**
 	 * This organizes by the relavant of each item/block. Blocks come first then items.
@@ -170,6 +171,7 @@ public class INCItems {
 		GENERIC.add(SILVER_NUGGET);
 		GENERIC.add(LEAD_NUGGET);
 		GENERIC.add(LIGNITE);
+		GENERIC.add(OILSHALE_DUST);
 		GENERIC.add(COPPER_SHOVEL);
 		GENERIC.add(COPPER_PICKAXE);
 		GENERIC.add(COPPER_AXE);
@@ -190,10 +192,10 @@ public class INCItems {
 		GENERIC.add(SILVER_BOOTS);
 		GENERIC.add(COPPER_HORSE_ARMOR);
 		GENERIC.add(SILVER_HORSE_ARMOR);
-		GENERIC.add(OILSHALE_DUST);
 		GENERIC.add(COPPER_PLATE);
 		GENERIC.add(TIN_PLATE);
 		GENERIC.add(SILVER_PLATE);
+		GENERIC.add(LEAD_PLATE);
 	}
 
 	@SubscribeEvent

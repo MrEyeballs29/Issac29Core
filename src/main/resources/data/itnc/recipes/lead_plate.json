@@ -5,11 +5,11 @@
   ],
   "key": {
     "#": {
-      "tag": "forge:ingots/silver"
+      "tag": "forge:ingots/lead"
     }
   },
   "result": {
-    "item": "itnc:silver_plate",
+    "item": "itnc:lead_plate",
     "count": 2
   }
 }
