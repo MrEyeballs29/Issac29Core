@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "copper_ingot",
+  "ingredients": [
+    {
+      "item": "itnc:lead_block"
+    }
+  ],
+  "result": {
+    "item": "itnc:lead_ingot",
+    "count": 9
+  }
+}

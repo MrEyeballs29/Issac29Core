@@ -24,7 +24,7 @@ displayName="Issac29Core" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 logoFile="icon.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks for this example mod goes to Java"
+credits="Without any metals, it would be more boring."
 authors="MrEyeballs29"
 description='''
 A core mod that adds new metals, gems, and resources to make player experience easier.

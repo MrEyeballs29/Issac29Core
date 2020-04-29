@@ -16,11 +16,11 @@ public class ArmorMaterial implements IArmorMaterial {
 	public static final IArmorMaterial IRON = net.minecraft.item.ArmorMaterial.IRON;
 	public static final IArmorMaterial DIAMOND = net.minecraft.item.ArmorMaterial.DIAMOND;
 	
-	public static final IArmorMaterial COPPER = new ArmorMaterial("itnc:copper", 10, 1, 4, 3, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 14,
+	public static final IArmorMaterial COPPER = new ArmorMaterial("itnc:copper", 10, 1, 3, 4, 1, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 14,
 			Ingredient.fromItems(INCItems.COPPER_INGOT), 0.0F);
-	public static final IArmorMaterial SILVER = new ArmorMaterial("itnc:silver", 8, 1, 5, 3, 2, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 18,
+	public static final IArmorMaterial SILVER = new ArmorMaterial("itnc:silver", 8, 2, 3, 4, 1, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 18,
 			Ingredient.fromItems(INCItems.SILVER_INGOT), 0.0F);
-	public static final IArmorMaterial LEAD = new ArmorMaterial("itnc:lead", 12, 1, 5 ,3 ,2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
+	public static final IArmorMaterial LEAD = new ArmorMaterial("itnc:lead", 12, 2, 3, 4 ,2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
 			Ingredient.fromItems(INCItems.LEAD_INGOT), 1.5F);
 	
 	private float toughness;
@@ -33,11 +33,11 @@ public class ArmorMaterial implements IArmorMaterial {
 
 	private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
 	
-	public ArmorMaterial(String name, int factor, int helmet, int chestplate, int leggings, int boots, SoundEvent sound, int enchant,
+	public ArmorMaterial(String name, int factor, int boots, int leggings, int chestplate, int helmet, SoundEvent sound, int enchant,
 			Ingredient repairMaterial, float toughness) {
 		this.name = name;
 		this.maxDamageFactor = factor;
-		this.damageReductionAmountArray = new int[] {helmet, chestplate, leggings, boots};
+		this.damageReductionAmountArray = new int[] {boots, leggings, chestplate, helmet};
 		this.soundEvent = sound;
 		this.enchantability = enchant;
 		this.repairMaterial = repairMaterial;

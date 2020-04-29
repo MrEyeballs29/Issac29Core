@@ -43,17 +43,18 @@ public class Isacc29Core {
 	
 	public void onCommonSetup(FMLCommonSetupEvent ev) {
 		OreGeneration.addCommonOre(INCBlocks.COPPER_ORE, 9, 18, 96, 0, 0);
-		OreGeneration.addCommonOre(INCBlocks.TIN_ORE, 9, 15, 48, 0, 0);
+		OreGeneration.addCommonOre(INCBlocks.TIN_ORE, 9, 15, 56, 0, 0);
 		OreGeneration.addCommonOre(INCBlocks.SILVER_ORE, 9, 9, 40, 0, 0);
-		OreGeneration.addCommonOre(Blocks.CLAY, 17, 7, 60, 0, 0);
+		OreGeneration.addCommonOre(INCBlocks.LEAD_ORE, 9, 12, 60, 12, 0);
+		OreGeneration.addCommonOre(Blocks.CLAY, 16, 8, 60, 0, 0);
 		OreGeneration.addDesertOre();
-		OreGeneration.addCommonOre(INCBlocks.LIGNITE_ORE, 12, 22, 160, 32, 32);
+		OreGeneration.addCommonOre(INCBlocks.LIGNITE_ORE, 18, 22, 160, 0, 0);
 		OreGeneration.addNetherOre(INCBlocks.NETHER_GOLD_ORE, 9, 16, 100, 10, 20);
 		OreGeneration.addNetherOre(INCBlocks.NETHER_IRON_ORE, 9, 8, 90, 15, 0);
 		OreGeneration.addNetherOre(INCBlocks.NETHER_COPPER_ORE, 9, 13, 100, 18, 15);
+		OreGeneration.addNetherOre(INCBlocks.NETHER_LEAD_ORE, 9, 11, 80, 20, 10);
 		OreGeneration.addEnderOre(INCBlocks.END_TIN_ORE, 9, 10, 96);
 		OreGeneration.addEnderOre(INCBlocks.END_SILVER_ORE, 9, 13, 96);
-		
 	}
 	
 	public void onClientSetup(FMLClientSetupEvent ev) {
@@ -61,5 +62,6 @@ public class Isacc29Core {
 		RenderTypeLookup.setRenderLayer(INCBlocks.GOLD_FRAME, RenderType.getCutoutMipped());
 		RenderTypeLookup.setRenderLayer(INCBlocks.COPPER_FRAME, RenderType.getCutoutMipped());
 		RenderTypeLookup.setRenderLayer(INCBlocks.TIN_FRAME, RenderType.getCutoutMipped());
+		RenderTypeLookup.setRenderLayer(INCBlocks.SILVER_FRAME, RenderType.getCutoutMipped());
 	}
 }

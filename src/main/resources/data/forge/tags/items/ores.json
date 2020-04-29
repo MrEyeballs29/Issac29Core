@@ -12,6 +12,8 @@
     "#forge:ores/copper",
     "#forge:ores/tin",
     "#forge:ores/silver",
-    "#forge:ores/lignite"
+    "#forge:ores/lead",
+    "#forge:ores/lignite",
+    "#forge:ores/oilshale"
   ]
 }

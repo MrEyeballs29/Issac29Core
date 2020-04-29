@@ -24,9 +24,9 @@ public class OreGeneration {
 	}
 	
 	public static void addDesertOre() {
-		Biomes.DESERT.addFeature(Decoration.TOP_LAYER_MODIFICATION, INCFeatures.EXTENDED_ORE.withConfiguration(new ExtendedOreFeatureConfig(Blocks.SAND.getDefaultState(), INCBlocks.OILSHALE_ORE.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 56, 56, 240))));
-		Biomes.DESERT_HILLS.addFeature(Decoration.TOP_LAYER_MODIFICATION, INCFeatures.EXTENDED_ORE.withConfiguration(new ExtendedOreFeatureConfig(Blocks.SAND.getDefaultState(), INCBlocks.OILSHALE_ORE.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 56, 56, 240))));
-		Biomes.DESERT_LAKES.addFeature(Decoration.TOP_LAYER_MODIFICATION, INCFeatures.EXTENDED_ORE.withConfiguration(new ExtendedOreFeatureConfig(Blocks.SAND.getDefaultState(), INCBlocks.OILSHALE_ORE.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 56, 56, 240))));
+		Biomes.DESERT.addFeature(Decoration.TOP_LAYER_MODIFICATION, INCFeatures.EXTENDED_ORE.withConfiguration(new ExtendedOreFeatureConfig(Blocks.SAND.getDefaultState(), INCBlocks.OILSHALE_ORE.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 0, 0, 240))));
+		Biomes.DESERT_HILLS.addFeature(Decoration.TOP_LAYER_MODIFICATION, INCFeatures.EXTENDED_ORE.withConfiguration(new ExtendedOreFeatureConfig(Blocks.SAND.getDefaultState(), INCBlocks.OILSHALE_ORE.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 0, 0, 240))));
+		Biomes.DESERT_LAKES.addFeature(Decoration.TOP_LAYER_MODIFICATION, INCFeatures.EXTENDED_ORE.withConfiguration(new ExtendedOreFeatureConfig(Blocks.SAND.getDefaultState(), INCBlocks.OILSHALE_ORE.getDefaultState(), 8)).withPlacement(Placement.COUNT_RANGE.configure(new CountRangeConfig(16, 0, 0, 240))));
 	}
 	
 	public static void addCommonOre(Block block, int size, int count, int maxheight, int bottomOffset, int topOffset) {

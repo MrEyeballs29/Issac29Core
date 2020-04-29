@@ -1,0 +1,32 @@
+{
+	"parent": "minecraft:recipes/root",
+	"rewards": {
+		"recipes": [
+			"itnc:polished_stone_slab_from_polished_stone_stonecutting"
+		]
+	},
+	"criteria": {
+		"has_polished_stone": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"item": "itnc:polished_stone"
+					}
+				]
+			}
+		},
+		"has_the_recipe": {
+			"trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "itnc:polished_stone_slab_from_polished_stone_stonecutting"
+			}
+		}
+	},
+	"requirements": [
+		[
+			"has_polished_stone",
+			"has_the_recipe"
+		]
+	]
+}

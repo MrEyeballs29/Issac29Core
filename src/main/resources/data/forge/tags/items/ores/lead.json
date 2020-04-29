@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "itnc:lead_ore",
+    "itnc:nether_lead_ore"
+  ]
+}

@@ -5,15 +5,13 @@ import java.util.List;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Block.Properties;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.FireBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.world.IWorldReader;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -39,6 +37,9 @@ public class INCBlocks {
 	public static final Block TIN_FRAME = new FrameBlock(Properties.from(TIN_BLOCK).hardnessAndResistance(1.5F, 3.0F).notSolid()).setRegistryName("itnc", "tin_frame");
 	public static final Block SILVER_ORE = create(Material.ROCK, 3.0F, 2, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "silver_ore"));
 	public static final Block SILVER_BLOCK = new BeaconBaseBlock(Properties.create(Material.IRON, MaterialColor.WOOL).hardnessAndResistance(4.0F, 6.0F).harvestLevel(2).harvestTool(ToolType.PICKAXE).sound(SoundType.METAL)).setRegistryName(new ResourceLocation("itnc", "silver_block"));
+	public static final Block SILVER_FRAME = new FrameBlock(Properties.from(SILVER_BLOCK).hardnessAndResistance(2.0F, 3.0F).notSolid()).setRegistryName("itnc", "silver_frame");
+	public static final Block LEAD_ORE = create(Material.ROCK, 3.0F, 1, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "lead_ore"));
+	public static final Block LEAD_BLOCK = new BeaconBaseBlock(Properties.create(Material.IRON, MaterialColor.PURPLE_TERRACOTTA).hardnessAndResistance(5.0F, 6.0F).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)).setRegistryName("itnc", "lead_block");
 	public static final Block LIGNITE_ORE = createOre(Material.ROCK, 3.0F, 3.0F, 0, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "lignite_ore"), 0, 2);
 	public static final Block LIGNITE_BLOCK = create(Material.ROCK, MaterialColor.BROWN_TERRACOTTA, 3.5F, 6.0F, 0, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "lignite_block"));
 	public static final Block OILSHALE_ORE = new FallingExpBlock(Properties.from(Blocks.SAND).hardnessAndResistance(0.75F), 1, 3, 2171176, 14406560).setRegistryName("itnc", "oilshale_ore");
@@ -47,6 +48,7 @@ public class INCBlocks {
 	public static final Block NETHER_COPPER_ORE = create(Material.ROCK, MaterialColor.NETHERRACK, 3.0F, 3.0F, 0, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "nether_copper_ore"));
 	public static final Block END_TIN_ORE = create(Material.ROCK, MaterialColor.SAND, 4.0F, 7.5F, 1, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "end_tin_ore"));
 	public static final Block END_SILVER_ORE = create(Material.ROCK, MaterialColor.SAND, 4.0F, 7.5F, 1, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "end_silver_ore"));
+	public static final Block NETHER_LEAD_ORE = create(Material.ROCK, MaterialColor.NETHERRACK, 3.0F, 3.0F, 0, ToolType.PICKAXE, SoundType.STONE, new ResourceLocation("itnc", "nether_lead_ore"));
 	public static final Block WHITE_WOOL_WIRE = new FiberBlock(Properties.from(Blocks.WHITE_WOOL).notSolid().hardnessAndResistance(0.25f, 0.2f)).setRegistryName(new ResourceLocation("itnc", "white_wool_wire"));
 	public static final Block ORANGE_WOOL_WIRE = new FiberBlock(Properties.from(Blocks.ORANGE_WOOL).notSolid().hardnessAndResistance(0.25f, 0.2f)).setRegistryName(new ResourceLocation("itnc", "orange_wool_wire"));
 	public static final Block MAGENTA_WOOL_WIRE = new FiberBlock(Properties.from(Blocks.MAGENTA_WOOL).notSolid().hardnessAndResistance(0.25f, 0.2f)).setRegistryName(new ResourceLocation("itnc", "magenta_wool_wire"));
@@ -72,17 +74,21 @@ public class INCBlocks {
 		LIST.add(COPPER_ORE);
 		LIST.add(TIN_ORE);
 		LIST.add(SILVER_ORE);
+		LIST.add(LEAD_ORE);
 		LIST.add(LIGNITE_ORE);
 		LIST.add(OILSHALE_ORE);
 		LIST.add(COPPER_BLOCK);
 		LIST.add(TIN_BLOCK);
 		LIST.add(SILVER_BLOCK);
+		LIST.add(LEAD_BLOCK);
 		LIST.add(LIGNITE_BLOCK);
 		LIST.add(COPPER_FRAME);
 		LIST.add(TIN_FRAME);
+		LIST.add(SILVER_FRAME);
 		LIST.add(NETHER_IRON_ORE);
 		LIST.add(NETHER_GOLD_ORE);
 		LIST.add(NETHER_COPPER_ORE);
+		LIST.add(NETHER_LEAD_ORE);
 		LIST.add(END_TIN_ORE);
 		LIST.add(END_SILVER_ORE);
 		LIST.add(WHITE_WOOL_WIRE);
@@ -101,6 +107,7 @@ public class INCBlocks {
 		LIST.add(GREEN_WOOL_WIRE);
 		LIST.add(RED_WOOL_WIRE);
 		LIST.add(BLACK_WOOL_WIRE);
+		addFireInfo();
 	}
 	
 	@SubscribeEvent
@@ -127,20 +134,6 @@ public class INCBlocks {
 		return create(Material.ROCK, 0.0f, -1, null, SoundType.STONE, loc);
 	}
 
-	public static Block createBeaconBase(Material material, float h, float r, int l, ToolType type, SoundType sound, ResourceLocation loc) {
-		Properties propeties = Properties.create(material);
-		propeties.hardnessAndResistance(h, r).harvestLevel(l).harvestTool(type);
-		propeties.sound(sound);
-		Block block = new Block(propeties) {
-			@Override
-			public boolean isBeaconBase(BlockState state, IWorldReader world, BlockPos pos, BlockPos beacon) {
-				return true;
-			}
-		};
-		block.setRegistryName(loc);
-		return block;
-	}
-	
 	public static Block createOre(Material material, float f, float g, int i, ToolType type, SoundType sound,
 			ResourceLocation resourceLocation, int min, int max) {
 		Properties propeties = Properties.create(material);
@@ -149,5 +142,26 @@ public class INCBlocks {
 		Block block = new ExperienceBlock(propeties, min, max);
 		block.setRegistryName(resourceLocation);
 		return block;
+	}
+	
+	public static void addFireInfo() {
+		FireBlock fire = (FireBlock) Blocks.FIRE;
+		fire.setFireInfo(LIGNITE_BLOCK, 10, 10);
+		fire.setFireInfo(WHITE_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(ORANGE_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(MAGENTA_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(LIGHT_BLUE_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(YELLOW_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(LIME_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(PINK_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(GRAY_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(LIGHT_GRAY_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(CYAN_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(PURPLE_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(BLUE_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(BROWN_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(GREEN_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(RED_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(BLACK_WOOL_WIRE, 20, 40);
 	}
 }

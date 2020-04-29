@@ -46,14 +46,18 @@ public class INCItems {
 	public static final Item TIN_FRAME = importBlock(INCBlocks.TIN_FRAME, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "tin_frame"));
 	public static final Item SILVER_ORE = importBlock(INCBlocks.SILVER_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "silver_ore"));
 	public static final Item SILVER_BLOCK = importBlock(INCBlocks.SILVER_BLOCK, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "silver_block"));
+	public static final Item SILVER_FRAME = importBlock(INCBlocks.SILVER_FRAME, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "silver_frame"));
+	public static final Item LEAD_ORE = importBlock(INCBlocks.LEAD_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "lead_ore"));
+	public static final Item LEAD_BLOCK = importBlock(INCBlocks.LEAD_BLOCK, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "lead_block"));
 	public static final Item LIGNITE_ORE = importBlock(INCBlocks.LIGNITE_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "lignite_ore"));
-	public static final Item LIGNITE_BLOCK = importFuelBlock(INCBlocks.LIGNITE_BLOCK, ItemGroup.BUILDING_BLOCKS, 8000, new ResourceLocation("itnc", "lignite_block"));
+	public static final Item LIGNITE_BLOCK = importFuelBlock(INCBlocks.LIGNITE_BLOCK, ItemGroup.BUILDING_BLOCKS, 4000, new ResourceLocation("itnc", "lignite_block"));
 	public static final Item OILSHALE_ORE = importBlock(INCBlocks.OILSHALE_ORE, ItemGroup.BUILDING_BLOCKS);
 	public static final Item NETHER_GOLD_ORE = importBlock(INCBlocks.NETHER_GOLD_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "nether_gold_ore"));
 	public static final Item NETHER_IRON_ORE = importBlock(INCBlocks.NETHER_IRON_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "nether_iron_ore"));
 	public static final Item NETHER_COPPER_ORE = importBlock(INCBlocks.NETHER_COPPER_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "nether_copper_ore"));
 	public static final Item END_TIN_ORE = importBlock(INCBlocks.END_TIN_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "end_tin_ore"));
 	public static final Item END_SILVER_ORE = importBlock(INCBlocks.END_SILVER_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "end_silver_ore"));
+	public static final Item NETHER_LEAD_ORE = importBlock(INCBlocks.NETHER_LEAD_ORE, ItemGroup.BUILDING_BLOCKS, new ResourceLocation("itnc", "nether_lead_ore"));
 	public static final Item WHITE_WOOL_WIRE = importFuelBlock(INCBlocks.WHITE_WOOL_WIRE, ItemGroup.DECORATIONS, 50, new ResourceLocation("itnc", "white_wool_wire"));
 	public static final Item ORANGE_WOOL_WIRE = importFuelBlock(INCBlocks.ORANGE_WOOL_WIRE, ItemGroup.DECORATIONS, 50, new ResourceLocation("itnc", "orange_wool_wire"));
 	public static final Item MAGENTA_WOOL_WIRE = importFuelBlock(INCBlocks.MAGENTA_WOOL_WIRE, ItemGroup.DECORATIONS, 50, new ResourceLocation("itnc", "magenta_wool_wire"));
@@ -103,9 +107,13 @@ public class INCItems {
 	public static final Item SILVER_BOOTS = createArmor(ArmorMaterial.SILVER, EquipmentSlotType.FEET, ItemGroup.COMBAT, new ResourceLocation("itnc", "silver_boots"));
 	public static final Item LIGNITE = new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName(new ResourceLocation("itnc", "lignite"));
 	public static final Item MAGNETIC_IRON_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "magnetic_iron_ingot"));
-	public static final Item OILSHALE_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "oilshale_dust"));
+	public static final Item OILSHALE_DUST =new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName("itnc", "oilshale_dust");
 	public static final Item LEAD_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_ingot"));
+	public static final Item LEAD_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_nugget"));
 	
+	/**
+	 * This organizes by the relavant of each item/block. Blocks come first then items.
+	 */
 	private static void initalizeItems() {
 		BLOCK.add(POLISHED_STONE);
 		BLOCK.add(POLISHED_STONE_SLAB);
@@ -114,17 +122,24 @@ public class INCItems {
 		BLOCK.add(COPPER_ORE);
 		BLOCK.add(TIN_ORE);
 		BLOCK.add(SILVER_ORE);
+		BLOCK.add(LEAD_ORE);
 		BLOCK.add(LIGNITE_ORE);
 		BLOCK.add(OILSHALE_ORE);
 		BLOCK.add(COPPER_BLOCK);
 		BLOCK.add(TIN_BLOCK);
 		BLOCK.add(SILVER_BLOCK);
+		BLOCK.add(LEAD_BLOCK);
 		BLOCK.add(LIGNITE_BLOCK);
 		BLOCK.add(COPPER_FRAME);
 		BLOCK.add(TIN_FRAME);
+		BLOCK.add(SILVER_FRAME);
 		BLOCK.add(NETHER_IRON_ORE);
 		BLOCK.add(NETHER_GOLD_ORE);
 		BLOCK.add(NETHER_COPPER_ORE);
+		/*
+		 * Although lead comes after silver it is still a nether ore. 
+		 */
+		BLOCK.add(NETHER_LEAD_ORE);
 		BLOCK.add(END_TIN_ORE);
 		BLOCK.add(END_SILVER_ORE);
 		BLOCK.add(WHITE_WOOL_WIRE);
@@ -153,6 +168,7 @@ public class INCItems {
 		GENERIC.add(COPPER_NUGGET);
 		GENERIC.add(TIN_NUGGET);
 		GENERIC.add(SILVER_NUGGET);
+		GENERIC.add(LEAD_NUGGET);
 		GENERIC.add(LIGNITE);
 		GENERIC.add(COPPER_SHOVEL);
 		GENERIC.add(COPPER_PICKAXE);

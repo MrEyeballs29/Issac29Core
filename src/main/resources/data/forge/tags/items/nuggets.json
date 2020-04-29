@@ -5,6 +5,7 @@
     "#forge:nuggets/gold",
     "#forge:nuggets/copper",
     "#forge:nuggets/tin",
-    "#forge:nuggets/silver"
+    "#forge:nuggets/silver",
+    "#forge:nuggets/lead"
   ]
 }

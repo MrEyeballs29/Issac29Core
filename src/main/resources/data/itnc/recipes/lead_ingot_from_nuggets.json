@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "copper_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "itnc:lead_nugget"
+    }
+  },
+  "result": {
+    "item": "itnc:lead_ingot"
+  }
+}
