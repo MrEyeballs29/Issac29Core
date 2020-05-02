@@ -13,7 +13,7 @@ public class ItemTier implements IItemTier {
 	
 	public static final IItemTier COPPER = new ItemTier("Copper", 96, 5.0F, 1.5F, 1, 16, Ingredient.fromItems(INCItems.COPPER_INGOT));
 	public static final IItemTier SILVER = new ItemTier("Silver", 56, 6.5F, 1.25F, 1, 19, Ingredient.fromItems(INCItems.SILVER_INGOT));
-	public static final IItemTier LEAD = new ItemTier("Lead", 175, 4.5F, 1.75F, 2, 8, Ingredient.fromItems(INCItems.LEAD_INGOT));
+	public static final IItemTier LEAD = new ItemTier("Lead", 150, 4.5F, 1.5F, 1, 8, Ingredient.fromItems(INCItems.LEAD_INGOT));
 	
 	private final String name;
 	private final int maxUses;

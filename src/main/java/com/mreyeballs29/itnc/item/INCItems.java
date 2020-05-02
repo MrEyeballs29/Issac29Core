@@ -90,6 +90,7 @@ public class INCItems {
 	public static final Item COPPER_BOOTS = createArmor(ArmorMaterial.COPPER, EquipmentSlotType.FEET, ItemGroup.COMBAT, new ResourceLocation("itnc", "copper_boots"));
 	public static final Item COPPER_HORSE_ARMOR = createHorseArmor(4, new ResourceLocation("itnc:textures/entity/horse/armor/horse_armor_copper.png"), ItemGroup.MISC, new ResourceLocation("itnc", "copper_horse_armor"));
 	public static final Item SILVER_HORSE_ARMOR = createHorseArmor(6, new ResourceLocation("itnc:textures/entity/horse/armor/horse_armor_silver.png"), ItemGroup.MISC, new ResourceLocation("itnc", "silver_horse_armor"));
+	public static final Item LEAD_HORSE_ARMOR = createHorseArmor(8, new ResourceLocation("itnc:textures/entity/horse/armor/horse_armor_lead.png"), ItemGroup.MISC, new ResourceLocation("itnc", "lead_horse_armor"));
 	public static final Item COPPER_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_plate"));
 	public static final Item TIN_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_ingot"));
 	public static final Item TIN_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_nugget"));
@@ -112,6 +113,15 @@ public class INCItems {
 	public static final Item LEAD_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_ingot"));
 	public static final Item LEAD_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_nugget"));
 	public static final Item LEAD_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_plate"));
+	public static final Item LEAD_SHOVEL = createShovel(ItemTier.LEAD, ItemGroup.TOOLS, new ResourceLocation("itnc", "lead"));
+	public static final Item LEAD_PICKAXE = createPickaxe(ItemTier.LEAD, ItemGroup.TOOLS, new ResourceLocation("itnc", "lead"));
+	public static final Item LEAD_AXE = createAxe(ItemTier.LEAD, 6.0F, -3.0F, ItemGroup.TOOLS, new ResourceLocation("itnc", "lead"));
+	public static final Item LEAD_SWORD = createSword(ItemTier.LEAD, ItemGroup.COMBAT, new ResourceLocation("itnc","lead"));
+	public static final Item LEAD_HOE = createHoe(ItemTier.LEAD, -1.5F, ItemGroup.TOOLS, new ResourceLocation("itnc", "lead"));
+	public static final Item LEAD_HELMET = createArmor(ArmorMaterial.LEAD, EquipmentSlotType.HEAD, ItemGroup.COMBAT, new ResourceLocation("itnc", "lead_helmet"));
+	public static final Item LEAD_CHESTPLATE = createArmor(ArmorMaterial.LEAD, EquipmentSlotType.CHEST, ItemGroup.COMBAT, new ResourceLocation("itnc", "lead_chestplate"));
+	public static final Item LEAD_LEGGINGS = createArmor(ArmorMaterial.LEAD, EquipmentSlotType.LEGS, ItemGroup.COMBAT, new ResourceLocation("itnc", "lead_leggings"));
+	public static final Item LEAD_BOOTS = createArmor(ArmorMaterial.LEAD, EquipmentSlotType.FEET, ItemGroup.COMBAT, new ResourceLocation("itnc", "lead_boots"));
 	
 	/**
 	 * This organizes by the relavant of each item/block. Blocks come first then items.
@@ -182,8 +192,13 @@ public class INCItems {
 		GENERIC.add(SILVER_PICKAXE);
 		GENERIC.add(SILVER_AXE);
 		GENERIC.add(SILVER_SWORD);
+		GENERIC.add(LEAD_SHOVEL);
+		GENERIC.add(LEAD_PICKAXE);
+		GENERIC.add(LEAD_AXE);
+		GENERIC.add(LEAD_SWORD);
 		GENERIC.add(COPPER_HOE);
 	    GENERIC.add(SILVER_HOE);
+	    GENERIC.add(LEAD_HOE);
 		GENERIC.add(COPPER_HELMET);
 		GENERIC.add(COPPER_CHESTPLATE);
 		GENERIC.add(COPPER_LEGGINGS);
@@ -192,8 +207,13 @@ public class INCItems {
 		GENERIC.add(SILVER_CHESTPLATE);
 		GENERIC.add(SILVER_LEGGINGS);
 		GENERIC.add(SILVER_BOOTS);
+		GENERIC.add(LEAD_HELMET);
+		GENERIC.add(LEAD_CHESTPLATE);
+		GENERIC.add(LEAD_LEGGINGS);
+		GENERIC.add(LEAD_BOOTS);
 		GENERIC.add(COPPER_HORSE_ARMOR);
 		GENERIC.add(SILVER_HORSE_ARMOR);
+		GENERIC.add(LEAD_HORSE_ARMOR);
 		GENERIC.add(COPPER_PLATE);
 		GENERIC.add(TIN_PLATE);
 		GENERIC.add(SILVER_PLATE);

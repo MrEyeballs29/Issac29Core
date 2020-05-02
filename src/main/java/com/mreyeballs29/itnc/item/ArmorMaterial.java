@@ -20,7 +20,7 @@ public class ArmorMaterial implements IArmorMaterial {
 			Ingredient.fromItems(INCItems.COPPER_INGOT), 0.0F);
 	public static final IArmorMaterial SILVER = new ArmorMaterial("itnc:silver", 8, 2, 3, 4, 1, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 18,
 			Ingredient.fromItems(INCItems.SILVER_INGOT), 0.0F);
-	public static final IArmorMaterial LEAD = new ArmorMaterial("itnc:lead", 12, 2, 3, 4 ,2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
+	public static final IArmorMaterial LEAD = new ArmorMaterial("itnc:lead", 12, 2, 3, 4, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
 			Ingredient.fromItems(INCItems.LEAD_INGOT), 1.5F);
 	
 	private float toughness;
