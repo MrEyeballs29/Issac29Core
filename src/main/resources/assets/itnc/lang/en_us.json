@@ -78,5 +78,21 @@
 	"item.itnc.oilshale_dust": "Oilshale Dust",
 	"item.itnc.magnetic_iron_ingot": "Magnetic Iron Ingot",
 	"advancements.metal_forging.root.title" : "Metal Forging",
-	"advancements.metal_forging.root.description" : "The start of all metals"
+	"advancements.metal_forging.root.description" : "The start of all metals",
+	"advancements.metal_forging.smelt_gold.title" : "Gold King",
+	"advancements.metal_forging.smelt_gold.description" : "Smelt a gold ingot",
+	"advancements.metal_forging.smelt_copper.title" : "Sure can make Pipes",
+	"advancements.metal_forging.smelt_copper.description" : "Smelt a copper ingot",
+	"advancements.metal_forging.smelt_tin.title" : "Made for Food Cans",
+	"advancements.metal_forging.smelt_tin.description" : "Smelt a tin ingot",
+	"advancements.metal_forging.smelt_silver.title" : "Acquire Jewelry",
+	"advancements.metal_forging.smelt_silver.description" : "Smelt a silver ingot",
+	"advancements.metal_forging.smelt_lead.title" : "They're bad for pipes",
+	"advancements.metal_forging.smelt_lead.description" : "Smelt a lead ingot",
+	"advancements.metal_forging.smelt_zinc.title" : "Still worth a penny",
+	"advancements.metal_forging.smelt_zinc.description" : "Smelt a zinc ingot",
+	"advancements.metal_forging.smelt_aluminum.title" : "This stuff can be used for food",
+	"advancements.metal_forging.smelt_aluminum.description" : "Smelt an aluminum ingot",
+	"advancements.metal_forging.smelt_titanium.title" : "Based on Attack of the Titans",
+	"advancements.metal_forging.smelt_titanium.description" : "Smelt a titanium ingot"
 }

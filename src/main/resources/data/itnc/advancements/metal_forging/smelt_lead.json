@@ -1,0 +1,35 @@
+{
+  "parent": "itnc:metal_forging/root",
+  "display": {
+    "icon": {
+      "item": "itnc:lead_ingot"
+    },
+    "title": {
+      "translate": "advancements.metal_forging.smelt_lead.title"
+    },
+    "description": {
+      "translate": "advancements.metal_forging.smelt_lead.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "lead": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "lead"
+    ]
+  ]
+}

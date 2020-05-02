@@ -1,0 +1,35 @@
+{
+  "parent": "itnc:metal_forging/smelt_copper",
+  "display": {
+    "icon": {
+      "item": "itnc:silver_ingot"
+    },
+    "title": {
+      "translate": "advancements.metal_forging.smelt_silver.title"
+    },
+    "description": {
+      "translate": "advancements.metal_forging.smelt_silver.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "silver": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_ingot"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "silver"
+    ]
+  ]
+}
