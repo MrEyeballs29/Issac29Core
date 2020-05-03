@@ -10,10 +10,10 @@
       "tag": "forge:rods/wooden"
     },
     "X": {
-      "tag": "forge:ingots/copper"
+      "tag": "forge:ingots/lead"
     }
   },
   "result": {
-    "item": "itnc:copper_hoe"
+    "item": "itnc:lead_hoe"
   }
 }

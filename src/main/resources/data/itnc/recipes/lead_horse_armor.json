@@ -10,7 +10,7 @@
       "item": "minecraft:leather"
     },
     "#": {
-      "item": "forge:ingots/lead"
+      "tag": "forge:ingots/lead"
     }
   },
   "result": {
