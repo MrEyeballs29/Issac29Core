@@ -1,0 +1,131 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:lead_nugget_from_blasting"
+    ]
+  },
+  "criteria": {
+    "has_lead_pickaxe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_pickaxe"
+          }
+        ]
+      }
+    },
+    "has_lead_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_shovel"
+          }
+        ]
+      }
+    },
+    "has_lead_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_axe"
+          }
+        ]
+      }
+    },
+    "has_lead_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_hoe"
+          }
+        ]
+      }
+    },
+    "has_lead_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_sword"
+          }
+        ]
+      }
+    },
+    "has_lead_helmet": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_helmet"
+          }
+        ]
+      }
+    },
+    "has_lead_chestplate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_chestplate"
+          }
+        ]
+      }
+    },
+    "has_lead_leggings": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_leggings"
+          }
+        ]
+      }
+    },
+    "has_lead_boots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_boots"
+          }
+        ]
+      }
+    },
+    "has_lead_horse_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_horse_armor"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:lead_nugget_from_blasting"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lead_pickaxe",
+      "has_lead_shovel",
+      "has_lead_axe",
+      "has_lead_hoe",
+      "has_lead_sword",
+      "has_lead_helmet",
+      "has_lead_chestplate",
+      "has_lead_leggings",
+      "has_lead_boots",
+      "has_lead_horse_armor",
+      "has_the_recipe"
+    ]
+  ]
+}

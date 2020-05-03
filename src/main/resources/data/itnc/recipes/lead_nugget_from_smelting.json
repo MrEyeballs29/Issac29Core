@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "itnc:lead_pickaxe"
+    },
+    {
+      "item": "itnc:lead_shovel"
+    },
+    {
+      "item": "itnc:lead_axe"
+    },
+    {
+      "item": "itnc:lead_hoe"
+    },
+    {
+      "item": "itnc:lead_sword"
+    },
+    {
+      "item": "itnc:lead_helmet"
+    },
+    {
+      "item": "itnc:lead_chestplate"
+    },
+    {
+      "item": "itnc:lead_leggings"
+    },
+    {
+      "item": "itnc:lead_boots"
+    },
+    {
+      "item": "itnc:lead_horse_armor"
+    }
+  ],
+  "result": "itnc:lead_nugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

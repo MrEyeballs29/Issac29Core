@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "XXX",
+    "# #"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:leather"
+    },
+    "#": {
+      "item": "forge:ingots/lead"
+    }
+  },
+  "result": {
+    "item": "itnc:lead_horse_armor"
+  }
+}
