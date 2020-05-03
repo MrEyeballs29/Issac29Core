@@ -66,6 +66,12 @@ public class INCBlocks {
 	public static final Block GREEN_WOOL_WIRE = new FiberBlock(Properties.from(Blocks.GREEN_WOOL).notSolid().hardnessAndResistance(0.25f, 0.2f)).setRegistryName(new ResourceLocation("itnc", "green_wool_wire"));
 	public static final Block RED_WOOL_WIRE = new FiberBlock(Properties.from(Blocks.RED_WOOL).notSolid().hardnessAndResistance(0.25f, 0.2f)).setRegistryName(new ResourceLocation("itnc", "red_wool_wire"));
 	public static final Block BLACK_WOOL_WIRE = new FiberBlock(Properties.from(Blocks.BLACK_WOOL).notSolid().hardnessAndResistance(0.25f, 0.2f)).setRegistryName(new ResourceLocation("itnc", "black_wool_wire"));
+	public static final Block OAK_CRATE = new CrateBlock(Properties.from(Blocks.OAK_PLANKS)).setRegistryName("itnc", "oak_crate");
+	public static final Block SPRUCE_CRATE = new CrateBlock(Properties.from(Blocks.SPRUCE_PLANKS)).setRegistryName("itnc", "spruce_crate");
+	public static final Block BIRCH_CRATE = new CrateBlock(Properties.from(Blocks.BIRCH_PLANKS)).setRegistryName("itnc", "birch_crate");
+	public static final Block JUNGLE_CRATE = new CrateBlock(Properties.from(Blocks.JUNGLE_PLANKS)).setRegistryName("itnc", "jungle_crate");
+	public static final Block ACACIA_CRATE = new CrateBlock(Properties.from(Blocks.ACACIA_PLANKS)).setRegistryName("itnc", "acacia_crate");
+	public static final Block DARK_OAK_CRATE = new CrateBlock(Properties.from(Blocks.DARK_OAK_PLANKS)).setRegistryName("itnc", "dark_oak_crate");
 	
 	private static void initalizeBlocks() {
 		LIST.add(POLISHED_STONE);
@@ -109,6 +115,12 @@ public class INCBlocks {
 		LIST.add(GREEN_WOOL_WIRE);
 		LIST.add(RED_WOOL_WIRE);
 		LIST.add(BLACK_WOOL_WIRE);
+		LIST.add(OAK_CRATE);
+		LIST.add(SPRUCE_CRATE);
+		LIST.add(BIRCH_CRATE);
+		LIST.add(JUNGLE_CRATE);
+		LIST.add(ACACIA_CRATE);
+		LIST.add(DARK_OAK_CRATE);
 		addFireInfo();
 	}
 	
@@ -165,5 +177,11 @@ public class INCBlocks {
 		fire.setFireInfo(GREEN_WOOL_WIRE, 20, 40);
 		fire.setFireInfo(RED_WOOL_WIRE, 20, 40);
 		fire.setFireInfo(BLACK_WOOL_WIRE, 20, 40);
+		fire.setFireInfo(OAK_CRATE, 5, 20);
+		fire.setFireInfo(SPRUCE_CRATE, 5, 20);
+		fire.setFireInfo(BIRCH_CRATE, 5, 20);
+		fire.setFireInfo(JUNGLE_CRATE, 5, 20);
+		fire.setFireInfo(ACACIA_CRATE, 5, 20);
+		fire.setFireInfo(DARK_OAK_CRATE, 5, 20);
 	}
 }

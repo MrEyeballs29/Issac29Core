@@ -4,9 +4,12 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.mreyeballs29.itnc.block.INCBlocks;
+import com.mreyeballs29.itnc.client.gui.screen.inventory.CrateScreen;
+import com.mreyeballs29.itnc.inventory.INContainerTypes;
 import com.mreyeballs29.itnc.world.OreGeneration;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.client.gui.ScreenManager;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.server.MinecraftServer;
@@ -65,5 +68,6 @@ public class Isacc29Core {
 		RenderTypeLookup.setRenderLayer(INCBlocks.TIN_FRAME, RenderType.getCutoutMipped());
 		RenderTypeLookup.setRenderLayer(INCBlocks.SILVER_FRAME, RenderType.getCutoutMipped());
 		RenderTypeLookup.setRenderLayer(INCBlocks.LEAD_FRAME, RenderType.getCutoutMipped());
+		ScreenManager.registerFactory(INContainerTypes.CRATE, CrateScreen::new);
 	}
 }

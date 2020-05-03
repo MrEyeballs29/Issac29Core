@@ -75,6 +75,12 @@ public class INCItems {
 	public static final Item GREEN_WOOL_WIRE = importFuelBlock(INCBlocks.GREEN_WOOL_WIRE, ItemGroup.DECORATIONS, 50, new ResourceLocation("itnc", "green_wool_wire"));
 	public static final Item RED_WOOL_WIRE = importFuelBlock(INCBlocks.RED_WOOL_WIRE, ItemGroup.DECORATIONS, 50, new ResourceLocation("itnc", "red_wool_wire"));
 	public static final Item BLACK_WOOL_WIRE = importFuelBlock(INCBlocks.BLACK_WOOL_WIRE, ItemGroup.DECORATIONS, 50, new ResourceLocation("itnc", "black_wool_wire"));
+	public static final Item OAK_CRATE = importBlock(INCBlocks.OAK_CRATE, ItemGroup.DECORATIONS);
+	public static final Item SPRUCE_CRATE = importBlock(INCBlocks.SPRUCE_CRATE, ItemGroup.DECORATIONS);
+	public static final Item BIRCH_CRATE = importBlock(INCBlocks.BIRCH_CRATE, ItemGroup.DECORATIONS);
+	public static final Item JUNGLE_CRATE = importBlock(INCBlocks.JUNGLE_CRATE, ItemGroup.DECORATIONS);
+	public static final Item ACACIA_CRATE = importBlock(INCBlocks.ACACIA_CRATE, ItemGroup.DECORATIONS);
+	public static final Item DARK_OAK_CRATE = importBlock(INCBlocks.DARK_OAK_CRATE, ItemGroup.DECORATIONS);
 	public static final Item IRON_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "iron_plate"));
 	public static final Item GOLD_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "gold_plate"));
 	public static final Item COPPER_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_ingot"));
@@ -171,6 +177,12 @@ public class INCItems {
 		BLOCK.add(GREEN_WOOL_WIRE);
 		BLOCK.add(RED_WOOL_WIRE);
 		BLOCK.add(BLACK_WOOL_WIRE);
+		BLOCK.add(OAK_CRATE);
+		BLOCK.add(SPRUCE_CRATE);
+		BLOCK.add(BIRCH_CRATE);
+		BLOCK.add(JUNGLE_CRATE);
+		BLOCK.add(ACACIA_CRATE);
+		BLOCK.add(DARK_OAK_CRATE);
 		GENERIC.add(IRON_PLATE);
 		GENERIC.add(GOLD_PLATE);
 		GENERIC.add(COPPER_INGOT);
