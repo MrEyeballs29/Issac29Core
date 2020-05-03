@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:plates/silver"
+    }
+  },
+  "result": {
+    "item": "itnc:silver_rod",
+    "count": 4
+  }
+}

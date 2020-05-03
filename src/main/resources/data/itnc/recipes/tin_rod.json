@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:plates/tin"
+    }
+  },
+  "result": {
+    "item": "itnc:tin_rod",
+    "count": 4
+  }
+}

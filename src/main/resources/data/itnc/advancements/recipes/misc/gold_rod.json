@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:gold_rod"
+    ]
+  },
+  "criteria": {
+    "has_gold_plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:gold_plate"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:gold_rod"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_gold_plate",
+      "has_the_recipe"
+    ]
+  ]
+}

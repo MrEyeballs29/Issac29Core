@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:lead_rod"
+    ]
+  },
+  "criteria": {
+    "has_lead_plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:lead_plate"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:lead_rod"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_lead_plate",
+      "has_the_recipe"
+    ]
+  ]
+}

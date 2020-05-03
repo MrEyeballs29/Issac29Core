@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:silver_rod"
+    ]
+  },
+  "criteria": {
+    "has_silver_plate": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:silver_plate"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:silver_rod"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_silver_plate",
+      "has_the_recipe"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "X"
+  ],
+  "key": {
+    "X": {
+      "tag": "forge:plates/iron"
+    }
+  },
+  "result": {
+    "item": "itnc:iron_rod",
+    "count": 4
+  }
+}

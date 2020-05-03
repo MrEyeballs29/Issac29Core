@@ -81,8 +81,14 @@ public class INCItems {
 	public static final Item JUNGLE_CRATE = importBlock(INCBlocks.JUNGLE_CRATE, ItemGroup.DECORATIONS);
 	public static final Item ACACIA_CRATE = importBlock(INCBlocks.ACACIA_CRATE, ItemGroup.DECORATIONS);
 	public static final Item DARK_OAK_CRATE = importBlock(INCBlocks.DARK_OAK_CRATE, ItemGroup.DECORATIONS);
+	public static final Item IRON_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "iron_dust"));
+	public static final Item GOLD_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "gold_dust"));
 	public static final Item IRON_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "iron_plate"));
 	public static final Item GOLD_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "gold_plate"));
+	public static final Item IRON_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "iron_rod"));
+	public static final Item GOLD_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "gold_rod"));
+	public static final Item IRON_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "iron_gear"));
+	public static final Item GOLD_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "gold_gear"));
 	public static final Item COPPER_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_ingot"));
 	public static final Item COPPER_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_nugget"));
 	public static final Item COPPER_SHOVEL = createShovel(ItemTier.COPPER, ItemGroup.TOOLS, new ResourceLocation("itnc","copper"));
@@ -97,10 +103,16 @@ public class INCItems {
 	public static final Item COPPER_HORSE_ARMOR = createHorseArmor(4, new ResourceLocation("itnc:textures/entity/horse/armor/horse_armor_copper.png"), ItemGroup.MISC, new ResourceLocation("itnc", "copper_horse_armor"));
 	public static final Item SILVER_HORSE_ARMOR = createHorseArmor(6, new ResourceLocation("itnc:textures/entity/horse/armor/horse_armor_silver.png"), ItemGroup.MISC, new ResourceLocation("itnc", "silver_horse_armor"));
 	public static final Item LEAD_HORSE_ARMOR = createHorseArmor(8, new ResourceLocation("itnc:textures/entity/horse/armor/horse_armor_lead.png"), ItemGroup.MISC, new ResourceLocation("itnc", "lead_horse_armor"));
+	public static final Item COPPER_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_dust"));
 	public static final Item COPPER_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_plate"));
+	public static final Item COPPER_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_rod"));
+	public static final Item COPPER_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "copper_gear"));
 	public static final Item TIN_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_ingot"));
 	public static final Item TIN_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_nugget"));
+	public static final Item TIN_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_dust"));
 	public static final Item TIN_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_plate"));
+	public static final Item TIN_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_rod"));
+	public static final Item TIN_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "tin_gear"));
 	public static final Item SILVER_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "silver_plate"));
 	public static final Item SILVER_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "silver_ingot"));
 	public static final Item SILVER_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "silver_nugget"));
@@ -113,6 +125,9 @@ public class INCItems {
 	public static final Item SILVER_CHESTPLATE = createArmor(ArmorMaterial.SILVER, EquipmentSlotType.CHEST, ItemGroup.COMBAT, new ResourceLocation("itnc", "silver_chestplate"));
 	public static final Item SILVER_LEGGINGS = createArmor(ArmorMaterial.SILVER, EquipmentSlotType.LEGS, ItemGroup.COMBAT, new ResourceLocation("itnc", "silver_leggings"));
 	public static final Item SILVER_BOOTS = createArmor(ArmorMaterial.SILVER, EquipmentSlotType.FEET, ItemGroup.COMBAT, new ResourceLocation("itnc", "silver_boots"));
+	public static final Item SILVER_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "silver_dust"));
+	public static final Item SILVER_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "silver_rod"));
+	public static final Item SILVER_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "silver_gear"));
 	public static final Item LIGNITE = new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName(new ResourceLocation("itnc", "lignite"));
 	public static final Item MAGNETIC_IRON_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "magnetic_iron_ingot"));
 	public static final Item OILSHALE_DUST =new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName("itnc", "oilshale_dust");
@@ -128,6 +143,9 @@ public class INCItems {
 	public static final Item LEAD_CHESTPLATE = createArmor(ArmorMaterial.LEAD, EquipmentSlotType.CHEST, ItemGroup.COMBAT, new ResourceLocation("itnc", "lead_chestplate"));
 	public static final Item LEAD_LEGGINGS = createArmor(ArmorMaterial.LEAD, EquipmentSlotType.LEGS, ItemGroup.COMBAT, new ResourceLocation("itnc", "lead_leggings"));
 	public static final Item LEAD_BOOTS = createArmor(ArmorMaterial.LEAD, EquipmentSlotType.FEET, ItemGroup.COMBAT, new ResourceLocation("itnc", "lead_boots"));
+	public static final Item LEAD_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_dust"));
+	public static final Item LEAD_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_rod"));
+	public static final Item LEAD_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_gear"));
 	
 	/**
 	 * This organizes by the relavant of each item/block. Blocks come first then items.
@@ -183,8 +201,14 @@ public class INCItems {
 		BLOCK.add(JUNGLE_CRATE);
 		BLOCK.add(ACACIA_CRATE);
 		BLOCK.add(DARK_OAK_CRATE);
+		GENERIC.add(IRON_DUST);
+		GENERIC.add(GOLD_DUST);
 		GENERIC.add(IRON_PLATE);
 		GENERIC.add(GOLD_PLATE);
+		GENERIC.add(IRON_ROD);
+		GENERIC.add(GOLD_ROD);
+		GENERIC.add(IRON_GEAR);
+		GENERIC.add(GOLD_GEAR);
 		GENERIC.add(COPPER_INGOT);
 		GENERIC.add(TIN_INGOT);
 		GENERIC.add(SILVER_INGOT);
@@ -195,6 +219,10 @@ public class INCItems {
 		GENERIC.add(SILVER_NUGGET);
 		GENERIC.add(LEAD_NUGGET);
 		GENERIC.add(LIGNITE);
+		GENERIC.add(COPPER_DUST);
+		GENERIC.add(TIN_DUST);
+		GENERIC.add(SILVER_DUST);
+		GENERIC.add(LEAD_DUST);
 		GENERIC.add(OILSHALE_DUST);
 		GENERIC.add(COPPER_SHOVEL);
 		GENERIC.add(COPPER_PICKAXE);
@@ -230,6 +258,14 @@ public class INCItems {
 		GENERIC.add(TIN_PLATE);
 		GENERIC.add(SILVER_PLATE);
 		GENERIC.add(LEAD_PLATE);
+		GENERIC.add(COPPER_ROD);
+		GENERIC.add(TIN_ROD);
+		GENERIC.add(SILVER_ROD);
+		GENERIC.add(LEAD_ROD);
+		GENERIC.add(COPPER_GEAR);
+		GENERIC.add(TIN_GEAR);
+		GENERIC.add(SILVER_GEAR);
+		GENERIC.add(LEAD_GEAR);
 	}
 
 	@SubscribeEvent
