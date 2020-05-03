@@ -35,6 +35,7 @@ public class Isacc29Core {
 	
 	@SubscribeEvent
 	public void onServerStarting(FMLServerStartingEvent event) {
+		@SuppressWarnings("resource")
 		MinecraftServer server = event.getServer();
 		GameRules rules = server.getGameRules();
 		BooleanValue ruleValue = rules.get(GameRules.DO_LIMITED_CRAFTING);

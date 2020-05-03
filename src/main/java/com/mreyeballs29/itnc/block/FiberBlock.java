@@ -34,6 +34,7 @@ public class FiberBlock extends SixWayBlock implements IWaterLoggable {
 		builder.add(NORTH, SOUTH, EAST, WEST, UP, DOWN, WATERLOGGED);
 	}
 	
+	@SuppressWarnings("resource")
 	public BlockState getStateForPlacement(BlockItemUseContext context) {
 	    return this.makeConnections(context.getWorld(), context.getPos());
 	}
