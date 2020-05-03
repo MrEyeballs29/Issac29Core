@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "copper_ingot",
+  "group": "lead_ingot",
   "ingredients": [
     {
       "item": "itnc:lead_block"
