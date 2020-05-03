@@ -28,6 +28,10 @@ public class Symbol {
 		this(str, 0);
 	}
 
+	public void setQuanity(int quanity) {
+		this.quanity = quanity;
+	}
+	
 	@Override
 	public String toString() {
 		if (this.quanity > 1) return String.valueOf(characters) + '_' + this.quanity;
