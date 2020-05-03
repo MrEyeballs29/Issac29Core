@@ -22,6 +22,8 @@ public class ArmorMaterial implements IArmorMaterial {
 			Ingredient.fromItems(INCItems.SILVER_INGOT), 0.0F);
 	public static final IArmorMaterial LEAD = new ArmorMaterial("itnc:lead", 12, 2, 3, 4, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
 			Ingredient.fromItems(INCItems.LEAD_INGOT), 1.5F);
+	public static final IArmorMaterial BRONZE = new ArmorMaterial("itnc:bronze", 14, 2, 3, 5, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
+			Ingredient.fromItems(INCItems.MAGNETIC_IRON_INGOT), 0.5F);
 	
 	private float toughness;
 	private String name;
