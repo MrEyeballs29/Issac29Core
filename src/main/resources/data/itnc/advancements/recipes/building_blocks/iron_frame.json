@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:iron_frame"
+    ]
+  },
+  "criteria": {
+    "has_iron_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:iron_rod"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:iron_frame"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_iron_rod",
+      "has_the_recipe"
+    ]
+  ]
+}

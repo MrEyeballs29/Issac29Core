@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "itnc:lead_rod"
+    }
+  },
+  "result": {
+    "item": "itnc:lead_frame",
+    "count": 4
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:copper_frame"
+    ]
+  },
+  "criteria": {
+    "has_copper_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:copper_rod"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:copper_frame"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_copper_rod",
+      "has_the_recipe"
+    ]
+  ]
+}

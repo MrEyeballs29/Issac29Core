@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "itnc:copper_rod"
+    }
+  },
+  "result": {
+    "item": "itnc:copper_frame",
+    "count": 4
+  }
+}
