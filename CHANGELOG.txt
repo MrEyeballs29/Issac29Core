@@ -1,4 +1,29 @@
-Version 1.0 (The Intial Setup)
+Version 1.0.4
+[Additions]
+- Added Lead Tools and Armor
+- Added Lead Horse Armor
+- Blocks of Lead and Silver are Tagged
+- Lead Plate is Tagged
+- Added 5 new Advancements
+- Added 6 Crates
+- Added Metal Rods
+
+[Changes]
+- Silver Tools have lowered damage by 0.25
+
+[Dev Additions]
+- Added Chemistry API.
+
+Version 1.0.3
+- Fixed Lead Frame treating like Glass.
+
+Version 1.0.2
+- Fixed Advancement Spam
+
+Version 1.0.1
+- Fixed Localization and Loot Table for Lead Frame
+
+Version 1.0.0 (The Intial Setup)
 - Added Copper, Tin, Silver, and Lead as part of the metals
 - Added Polished Stone and Slab to Enhance Decorations.
 - Added Recipes for Brown and Green Dye.
