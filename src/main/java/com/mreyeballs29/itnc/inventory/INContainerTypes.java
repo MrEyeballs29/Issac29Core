@@ -3,6 +3,8 @@ package com.mreyeballs29.itnc.inventory;
 import net.minecraft.client.Minecraft;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.extensions.IForgeContainerType;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -17,6 +19,7 @@ public class INContainerTypes {
 	public static ContainerType<CrateContainer> CRATE;
 
 	@SuppressWarnings("resource")
+	@OnlyIn(Dist.CLIENT)
 	@SubscribeEvent
     public static void onContainerRegistry(final RegistryEvent.Register<ContainerType<?>> event) {
         event.getRegistry().register(IForgeContainerType.create((windowId, inv, data) -> {
