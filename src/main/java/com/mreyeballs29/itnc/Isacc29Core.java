@@ -40,6 +40,7 @@ public class Isacc29Core {
 	public Isacc29Core() {
         MinecraftForge.EVENT_BUS.register(this);
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        Config.loadConfig(Config.COMMON_CONFIG, FMLPaths.CONFIGDIR.get().resolve("itnc.toml"));
         bus.addListener(this::onClientSetup);
         bus.addListener(this::onCommonSetup);
     }
@@ -54,10 +55,10 @@ public class Isacc29Core {
 	}
 	
 	public void onCommonSetup(FMLCommonSetupEvent ev) {
-		OreGeneration.addCommonOre(INCBlocks.COPPER_ORE, 9, 18, 96, 0, 0);
-		OreGeneration.addCommonOre(INCBlocks.TIN_ORE, 9, 15, 56, 0, 0);
-		OreGeneration.addCommonOre(INCBlocks.SILVER_ORE, 9, 9, 40, 0, 0);
-		OreGeneration.addCommonOre(INCBlocks.LEAD_ORE, 9, 12, 60, 12, 0);
+		if (Config.COPPER_GENERATE.get()) OreGeneration.addCommonOre(INCBlocks.COPPER_ORE, 9, 18, 96, 0, 0);
+		if (Config.TIN_GENERATE.get()) OreGeneration.addCommonOre(INCBlocks.TIN_ORE, 9, 15, 56, 0, 0);
+		if (Config.SILVER_GENERATE.get()) OreGeneration.addCommonOre(INCBlocks.SILVER_ORE, 9, 9, 40, 0, 0);
+		if (Config.LEAD_GENERATE.get()) OreGeneration.addCommonOre(INCBlocks.LEAD_ORE, 9, 12, 60, 12, 0);
 		OreGeneration.addCommonOre(Blocks.CLAY, 16, 8, 60, 0, 0);
 		OreGeneration.addDesertOre();
 		OreGeneration.addCommonOre(INCBlocks.LIGNITE_ORE, 18, 22, 160, 0, 0);
