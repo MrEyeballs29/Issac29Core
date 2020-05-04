@@ -5,7 +5,11 @@ import org.apache.logging.log4j.Logger;
 
 import com.mreyeballs29.itnc.block.INCBlocks;
 import com.mreyeballs29.itnc.client.gui.screen.inventory.CrateScreen;
+import com.mreyeballs29.itnc.config.Config;
 import com.mreyeballs29.itnc.inventory.INContainerTypes;
+import com.mreyeballs29.itnc.proxy.ClientProxy;
+import com.mreyeballs29.itnc.proxy.IProxy;
+import com.mreyeballs29.itnc.proxy.ServerProxy;
 import com.mreyeballs29.itnc.world.OreGeneration;
 
 import net.minecraft.block.Blocks;
@@ -18,16 +22,20 @@ import net.minecraft.world.GameRules.BooleanValue;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.DistExecutor;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 
 @Mod("itnc")
 public class Isacc29Core {
     
 	public static final Logger logger = LogManager.getFormatterLogger();
+	
+	public static final IProxy object = DistExecutor.runForDist(() -> () -> (new ClientProxy()), () -> () -> (new ServerProxy()));
 	
 	public Isacc29Core() {
         MinecraftForge.EVENT_BUS.register(this);
