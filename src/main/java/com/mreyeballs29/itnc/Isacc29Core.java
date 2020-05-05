@@ -62,12 +62,12 @@ public class Isacc29Core {
 		OreGeneration.addCommonOre(Blocks.CLAY, 16, 8, 60, 0, 0);
 		OreGeneration.addDesertOre();
 		OreGeneration.addCommonOre(INCBlocks.LIGNITE_ORE, 18, 22, 160, 0, 0);
-		OreGeneration.addNetherOre(INCBlocks.NETHER_GOLD_ORE, 9, 16, 100, 10, 20);
-		OreGeneration.addNetherOre(INCBlocks.NETHER_IRON_ORE, 9, 8, 90, 15, 0);
-		OreGeneration.addNetherOre(INCBlocks.NETHER_COPPER_ORE, 9, 13, 100, 18, 15);
-		OreGeneration.addNetherOre(INCBlocks.NETHER_LEAD_ORE, 9, 11, 80, 20, 10);
-		OreGeneration.addEnderOre(INCBlocks.END_TIN_ORE, 9, 10, 96);
-		OreGeneration.addEnderOre(INCBlocks.END_SILVER_ORE, 9, 13, 96);
+		if (Config.NETHER_GOLD_GENERATE.get()) OreGeneration.addNetherOre(INCBlocks.NETHER_GOLD_ORE, 9, 16, 100, 10, 20);
+		if (Config.NETHER_IRON_GENERATE.get()) OreGeneration.addNetherOre(INCBlocks.NETHER_IRON_ORE, 9, 8, 90, 15, 0);
+		if (Config.NETHER_COPPER_GENERATE.get()) OreGeneration.addNetherOre(INCBlocks.NETHER_COPPER_ORE, 9, 13, 100, 18, 15);
+		if (Config.NETHER_LEAD_GENERATE.get()) OreGeneration.addNetherOre(INCBlocks.NETHER_LEAD_ORE, 9, 11, 80, 20, 10);
+		if (Config.END_TIN_GENERATE.get()) OreGeneration.addEnderOre(INCBlocks.END_TIN_ORE, 9, 10, 96);
+		if (Config.END_SILVER_GENERATE.get()) OreGeneration.addEnderOre(INCBlocks.END_SILVER_ORE, 9, 13, 96);
 	}
 	
 	public void onClientSetup(FMLClientSetupEvent ev) {
