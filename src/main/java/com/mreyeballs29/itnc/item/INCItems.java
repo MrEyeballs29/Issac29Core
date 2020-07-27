@@ -146,6 +146,7 @@ public class INCItems {
 	public static final Item LEAD_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_dust"));
 	public static final Item LEAD_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_rod"));
 	public static final Item LEAD_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_gear"));
+	public static final Item FLINT_AND_IRON = new IgnitionItem(new Properties().maxDamage(32).group(ItemGroup.TOOLS)).setRegistryName(new ResourceLocation("itnc", "flint_and_iron")); //$NON-NLS-1$ //$NON-NLS-2$
 	
 	/**
 	 * This organizes by the relavant of each item/block. Blocks come first then items.
@@ -239,6 +240,10 @@ public class INCItems {
 		GENERIC.add(COPPER_HOE);
 	    GENERIC.add(SILVER_HOE);
 	    GENERIC.add(LEAD_HOE);
+	    /*
+	     * Flint and Tinder items should be after hoes
+	     */
+	    GENERIC.add(FLINT_AND_IRON);
 		GENERIC.add(COPPER_HELMET);
 		GENERIC.add(COPPER_CHESTPLATE);
 		GENERIC.add(COPPER_LEGGINGS);
