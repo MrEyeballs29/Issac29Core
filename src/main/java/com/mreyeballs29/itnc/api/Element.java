@@ -1,5 +1,7 @@
 package com.mreyeballs29.itnc.api;
 
+import com.mreyeballs29.itnc.config.Config;
+
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
 
@@ -9,9 +11,9 @@ public class Element implements IElement {
 	private State state;
 	private String name;
 	
-	public static final Element HYDROGEN = new Element("hydrogen", "h", State.GAS);
-	public static final Element HELIUM = new Element("helium", "he", State.GAS);
-	public static final Element LITHIUM = new Element("lithium", "li", State.SOLID);
+	public static final Element HYDROGEN = new Element("hydrogen", "h", State.GAS); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Element HELIUM = new Element("helium", "he", State.GAS); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Element LITHIUM = new Element("lithium", "li", State.SOLID); //$NON-NLS-1$ //$NON-NLS-2$
 	
 	public Element(String name, String str, State state) {
 		this.name = name;
@@ -46,7 +48,7 @@ public class Element implements IElement {
 
 	@Override
 	public int getProcessAmount() {
-		return 1;
+		return Config.ORE_PROCESS.get().intValue();
 	}
 
 	@Override
@@ -56,7 +58,7 @@ public class Element implements IElement {
 
 	@Override
 	public ITextComponent getDescription() {
-		return new TranslationTextComponent("desciption.database." + this.name);
+		return new TranslationTextComponent("desciption.database." + this.name); //$NON-NLS-1$
 	}
 
 }
