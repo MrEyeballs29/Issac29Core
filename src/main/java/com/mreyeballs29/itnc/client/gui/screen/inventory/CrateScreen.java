@@ -10,7 +10,7 @@ import net.minecraft.util.text.ITextComponent;
 
 public class CrateScreen extends ContainerScreen<CrateContainer> {
 
-	private ResourceLocation GUI = new ResourceLocation("itnc", "textures/gui/container/generic_5x3.png");
+	private static ResourceLocation GUI = new ResourceLocation("itnc", "textures/gui/container/generic_5x3.png"); //$NON-NLS-1$ //$NON-NLS-2$
 	
 	public CrateScreen(CrateContainer screenContainer, PlayerInventory inv, ITextComponent titleIn) {
 		super(screenContainer, inv, titleIn);
@@ -27,7 +27,7 @@ public class CrateScreen extends ContainerScreen<CrateContainer> {
     protected void drawGuiContainerForegroundLayer(int mouseX, int mouseY)
     {
         this.font.drawString(this.title.getFormattedText(), 8.0F, 7.0F, 4210752);
-        this.font.drawString(this.playerInventory.getDisplayName().getFormattedText(), 8.0F, (float) (this.ySize - 96 + 5), 4210752);
+        this.font.drawString(this.playerInventory.getDisplayName().getFormattedText(), 8.0F, this.ySize - 96 + 5, 4210752);
     }
 
 	@SuppressWarnings({ "deprecation", "resource" })

@@ -22,11 +22,11 @@ public class FallingExpBlock extends SandBlock {
 
 	@Override
 	public int getDustColor(BlockState state) {
-		return RANDOM.nextBoolean() ? super.getDustColor(state) : this.dustColor;
+		return this.RANDOM.nextBoolean() ? super.getDustColor(state) : this.dustColor;
 	}
 	
 	@Override
 	public int getExpDrop(BlockState state, IWorldReader world, BlockPos pos, int fortune, int silktouch) {
-		return silktouch == 0 ? MathHelper.nextInt(RANDOM, this.min, this.max) : 0;
+		return silktouch == 0 ? MathHelper.nextInt(this.RANDOM, this.min, this.max) : 0;
 	}
 }

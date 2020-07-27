@@ -14,23 +14,28 @@ public class FrameBlock extends Block {
 		super(properties);
 	}
 
+	@Override
 	@OnlyIn(Dist.CLIENT)
 	public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) {
 	   return 1.0F;
 	}
 
+	@Override
 	public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
 	   return true;
 	}
 
+	@Override
 	public boolean causesSuffocation(BlockState state, IBlockReader worldIn, BlockPos pos) {
 	   return false;
 	}
 
+	@Override
 	public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
 	   return false;
 	}
 	
+	@Override
 	public boolean canEntitySpawn(BlockState state, IBlockReader worldIn, BlockPos pos, EntityType<?> type) {
 	   return false;
 	}

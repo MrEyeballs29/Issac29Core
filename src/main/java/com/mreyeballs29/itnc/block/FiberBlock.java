@@ -34,6 +34,7 @@ public class FiberBlock extends SixWayBlock implements IWaterLoggable {
 		builder.add(NORTH, SOUTH, EAST, WEST, UP, DOWN, WATERLOGGED);
 	}
 	
+	@Override
 	@SuppressWarnings("resource")
 	public BlockState getStateForPlacement(BlockItemUseContext context) {
 	    return this.makeConnections(context.getWorld(), context.getPos());
@@ -56,22 +57,26 @@ public class FiberBlock extends SixWayBlock implements IWaterLoggable {
 				.with(WATERLOGGED, Boolean.valueOf(ifluidstate.getFluid() == Fluids.WATER));
 	}
 	
+	@Override
 	public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
-	    return !state.get(WATERLOGGED);
+	    return !state.get(WATERLOGGED).booleanValue();
 	}
 
+	@Override
 	@SuppressWarnings("deprecation")
 	public IFluidState getFluidState(BlockState state) {
-	      return state.get(WATERLOGGED) ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
+	      return state.get(WATERLOGGED).booleanValue() ? Fluids.WATER.getStillFluidState(false) : super.getFluidState(state);
 	   }
 	
+	@Override
 	@OnlyIn(Dist.CLIENT)
 	public float getAmbientOcclusionLightValue(BlockState state, IBlockReader worldIn, BlockPos pos) {
 	   return 1.0F;
 	}
 	
+	@Override
 	public BlockState updatePostPlacement(BlockState stateIn, Direction facing, BlockState facingState, IWorld worldIn, BlockPos currentPos, BlockPos facingPos) {
-		   if (stateIn.get(WATERLOGGED)) {
+		   if (stateIn.get(WATERLOGGED).booleanValue()) {
 	          worldIn.getPendingFluidTicks().scheduleTick(currentPos, Fluids.WATER, Fluids.WATER.getTickRate(worldIn));
 	       }   
 		   Block block = facingState.getBlock();
@@ -79,10 +84,12 @@ public class FiberBlock extends SixWayBlock implements IWaterLoggable {
 	       return stateIn.with(FACING_TO_PROPERTY_MAP.get(facing), Boolean.valueOf(flag));
 	   }
 	
+	@Override
 	public boolean isNormalCube(BlockState state, IBlockReader worldIn, BlockPos pos) {
 		   return false;
 		}
 		
+	@Override
 	public boolean canEntitySpawn(BlockState state, IBlockReader worldIn, BlockPos pos, EntityType<?> type) {
 		return false;
 	}

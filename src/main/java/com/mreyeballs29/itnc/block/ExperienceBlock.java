@@ -19,6 +19,6 @@ public class ExperienceBlock extends Block {
 
 	@Override
 	public int getExpDrop(BlockState state, IWorldReader world, BlockPos pos, int fortune, int silktouch) {
-		return silktouch == 0 ? MathHelper.nextInt(RANDOM, this.minimumExperence, this.maximumExperence) : 0;
+		return silktouch == 0 ? MathHelper.nextInt(this.RANDOM, this.minimumExperence, this.maximumExperence) : 0;
 	}
 }
