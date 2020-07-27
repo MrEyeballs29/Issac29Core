@@ -1,8 +1,13 @@
 {
   "type": "minecraft:blasting",
-  "ingredient": {
-     "tag": "forge:ores/silver"
-  },
+    "ingredient": [
+    {
+    "tag": "forge:ores/silver"
+    },
+    {
+    	"item": "itnc:silver_dust"
+    }
+  ],
   "result": "itnc:silver_ingot",
   "experience": 0.8,
   "cookingtime": 100

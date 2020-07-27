@@ -1,8 +1,13 @@
 {
   "type": "minecraft:blasting",
-  "ingredient": {
-     "tag": "forge:ores/copper"
-  },
+  "ingredient": [
+    {
+    "tag": "forge:ores/copper"
+    },
+    {
+    	"item": "itnc:copper_dust"
+    }
+  ],
   "result": "itnc:copper_ingot",
   "experience": 0.5,
   "cookingtime": 100

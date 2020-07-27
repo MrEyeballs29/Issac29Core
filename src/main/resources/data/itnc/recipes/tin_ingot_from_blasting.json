@@ -1,8 +1,13 @@
 {
   "type": "minecraft:blasting",
-  "ingredient": {
-     "tag": "forge:ores/tin"
-  },
+    "ingredient": [
+    {
+    "tag": "forge:ores/tin"
+    },
+    {
+    	"item": "itnc:tin_dust"
+    }
+  ],
   "result": "itnc:tin_ingot",
   "experience": 0.4,
   "cookingtime": 100

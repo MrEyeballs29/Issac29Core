@@ -1,8 +1,13 @@
 {
   "type": "minecraft:blasting",
-  "ingredient": {
+    "ingredient": [
+    {
     "tag": "forge:ores/gold"
-  },
+    },
+    {
+    	"item": "itnc:gold_dust"
+    }
+  ],
   "result": "minecraft:gold_ingot",
   "experience": 1.0,
   "cookingtime": 100
