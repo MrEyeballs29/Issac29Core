@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "itnc:bronze_pickaxe"
+    },
+    {
+      "item": "itnc:bronze_shovel"
+    },
+    {
+      "item": "itnc:bronze_axe"
+    },
+    {
+      "item": "itnc:bronze_hoe"
+    },
+    {
+      "item": "itnc:bronze_sword"
+    },
+    {
+      "item": "itnc:bronze_helmet"
+    },
+    {
+      "item": "itnc:bronze_chestplate"
+    },
+    {
+      "item": "itnc:bronze_leggings"
+    },
+    {
+      "item": "itnc:bronze_boots"
+    },
+    {
+      "item": "itnc:bronze_horse_armor"
+    },
+    {
+      "item": "itnc:bronze_mixture"
+    }
+  ],
+  "result": "itnc:bronze_nugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "itnc:nether_iron_ore"
+          "name": "itnc:nether_lead_ore"
         }
       ],
       "conditions": [

@@ -4,12 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 
 public class ListCreator {
-	@SafeVarargs
-	public static List<Item> create(Item... items) {
-		List<Item> list = new ArrayList<>();
+	
+	public static List<ItemStack> create(ItemStack... items) {
+		List<ItemStack> list = new ArrayList<>();
 		Collections.addAll(list, items);
 		return list;
 	}

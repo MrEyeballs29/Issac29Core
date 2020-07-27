@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "XXX",
+    "# #"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:leather"
+    },
+    "#": {
+      "item": "itnc:bronze_ingot"
+    }
+  },
+  "result": {
+    "item": "itnc:bronze_horse_armor"
+  }
+}

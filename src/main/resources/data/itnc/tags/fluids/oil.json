@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "itnc:oil",
+    "itnc:flowing_oil"
+  ]
+}

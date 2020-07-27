@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:bronze_ingot"
+    ]
+  },
+  "criteria": {
+    "has_bronze_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:bronze_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:bronze_ingot"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bronze_dust",
+      "has_the_recipe"
+    ]
+  ]
+}

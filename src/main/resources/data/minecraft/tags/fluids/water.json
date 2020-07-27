@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:water",
+    "minecraft:flowing_water",
+    "itnc:oil",
+    "itnc:flowing_oil"
+  ]
+}

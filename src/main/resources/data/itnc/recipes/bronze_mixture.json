@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "itnc:copper_nugget"
+    },
+    {
+      "item": "itnc:copper_nugget"
+    },
+    {
+      "item": "itnc:copper_nugget"
+    },
+    {
+      "item": "itnc:tin_nugget"
+    }
+  ],
+  "result": {
+    "item": "itnc:bronze_mixture",
+    "count": 4
+  }
+}

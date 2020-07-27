@@ -1,5 +1,7 @@
 package com.mreyeballs29.itnc.tileentity;
 
+import org.apache.logging.log4j.LogManager;
+
 import com.mreyeballs29.itnc.inventory.CrateContainer;
 import com.mreyeballs29.itnc.tileentity.item.ManualWrapper;
 
@@ -26,31 +28,35 @@ public class CrateTileEntity extends TileEntity implements INamedContainerProvid
 	
 	@Override
 	public void read(CompoundNBT compound) {
-		CompoundNBT nbtinv = compound.getCompound("items");
-		handler.ifPresent(h -> h.deserializeNBT(nbtinv));
+		CompoundNBT nbtinv = compound.getCompound("inventory"); //$NON-NLS-1$
+		this.handler.ifPresent(h -> h.deserializeNBT(nbtinv));
 		super.read(compound);
+		LogManager.getLogger().info(this.getContents().getStackInSlot(0).getItem().getRegistryName());
 	}
 	
 	public ManualWrapper getContents() {
-		ManualWrapper wrapper = new ManualWrapper(15);
-		handler.ifPresent(h -> { for (int i = 0; i < wrapper.getSlots(); i++) wrapper.setStackInSlot(i, h.getStackInSlot(i));});
-		return wrapper;
+		return this.handler.orElse(new ManualWrapper(15, this));
 	}
 	
 	@Override
 	public CompoundNBT write(CompoundNBT compound) {
-		handler.ifPresent(h -> {CompoundNBT nbt = h.serializeNBT(); compound.put("items", nbt);});
+		this.handler.ifPresent(h -> {CompoundNBT nbt = h.serializeNBT(); compound.put("inventory", nbt);}); //$NON-NLS-1$
 		return super.write(compound);
 	}
 	
+	@Override
+	public CompoundNBT getUpdateTag() {
+		return this.write(new CompoundNBT());
+	}
+	
 	private ManualWrapper createHandler() {
-		return new ManualWrapper(15);
+		return new ManualWrapper(15, this);
 	}
 	
 	@Override
 	public <T> LazyOptional<T> getCapability(Capability<T> cap, Direction side) {
 		if (cap == CapabilityItemHandler.ITEM_HANDLER_CAPABILITY) {
-			return handler.cast();
+			return this.handler.cast();
 		}
 		return super.getCapability(cap, side);
 	}
@@ -62,12 +68,12 @@ public class CrateTileEntity extends TileEntity implements INamedContainerProvid
 
 	@Override
 	public Container createMenu(int p_createMenu_1_, PlayerInventory p_createMenu_2_, PlayerEntity p_createMenu_3_) {
-		return new CrateContainer(p_createMenu_1_, world, pos, p_createMenu_2_, p_createMenu_3_);
+		return new CrateContainer(p_createMenu_1_, this.world, this.pos, p_createMenu_2_);
 	}
 
 	@Override
 	public ITextComponent getDisplayName() {
-		return new TranslationTextComponent("container.crate");
+		return new TranslationTextComponent("container.crate"); //$NON-NLS-1$
 	}
 	
 }

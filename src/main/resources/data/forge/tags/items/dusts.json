@@ -10,6 +10,7 @@
 		"#forge:dusts/copper",
 		"#forge:dusts/tin",
 		"#forge:dusts/silver",
-		"#forge:dusts/lead"
+		"#forge:dusts/lead",
+		"#forge:dusts/bronze"
 	]
 }

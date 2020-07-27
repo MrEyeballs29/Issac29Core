@@ -2,6 +2,7 @@ package com.mreyeballs29.itnc.block;
 
 import com.mreyeballs29.itnc.tileentity.CrateTileEntity;
 import com.mreyeballs29.itnc.tileentity.item.ManualWrapper;
+import com.mreyeballs29.itnc.util.RedstoneTools;
 
 import net.minecraft.block.BlockRenderType;
 import net.minecraft.block.BlockState;
@@ -31,6 +32,7 @@ public class CrateBlock extends ContainerBlock {
 		return true;
 	}
 	
+	@Override
 	@SuppressWarnings("deprecation")
 	public void onReplaced(BlockState state, World worldIn, BlockPos pos, BlockState newState, boolean isMoving) {
 	      if (state.getBlock() != newState.getBlock()) {
@@ -45,14 +47,33 @@ public class CrateBlock extends ContainerBlock {
 	     }
 	     super.onReplaced(state, worldIn, pos, newState, isMoving);
 	}
+	
 	@Override
 	public TileEntity createTileEntity(BlockState state, IBlockReader world) {
 		return new CrateTileEntity();
 	}
 	
+	@Deprecated
+	@Override
+	public boolean hasComparatorInputOverride(BlockState state) {
+		return true;
+	}
+	
+	@Deprecated
 	@Override
 	public BlockRenderType getRenderType(BlockState state) {
 		return BlockRenderType.MODEL;
+	}
+	
+	@Deprecated
+	@Override
+	public int getComparatorInputOverride(BlockState blockState, World worldIn, BlockPos pos) {
+	   TileEntity tile = worldIn.getTileEntity(pos);
+	   if (tile instanceof CrateTileEntity) {
+		   CrateTileEntity crate = (CrateTileEntity)tile;
+		   return RedstoneTools.calcuateInventory(crate.getContents());
+	   }
+	   return 0;
 	}
 	
 	@Override

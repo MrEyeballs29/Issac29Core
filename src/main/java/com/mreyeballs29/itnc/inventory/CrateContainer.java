@@ -1,11 +1,12 @@
 package com.mreyeballs29.itnc.inventory;
 
+import com.mreyeballs29.itnc.tileentity.CrateTileEntity;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
-import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.items.CapabilityItemHandler;
@@ -15,14 +16,12 @@ import net.minecraftforge.items.wrapper.InvWrapper;
 
 public class CrateContainer extends Container {
 
-	private TileEntity tileEntity;
-	private PlayerEntity playerEntity;
+	private CrateTileEntity tileEntity;
 	private InvWrapper playerInventory;
 	
-	public CrateContainer(int id, World world, BlockPos pos, PlayerInventory playerInventory, PlayerEntity player) {
+	public CrateContainer(int id, World world, BlockPos pos, PlayerInventory playerInventory) {
 		super(INContainerTypes.CRATE, id);
-		this.tileEntity = world.getTileEntity(pos);
-		this.playerEntity = player;
+		this.tileEntity = (CrateTileEntity) world.getTileEntity(pos);
 		this.playerInventory = new InvWrapper(playerInventory);
 		this.tileEntity.getCapability(CapabilityItemHandler.ITEM_HANDLER_CAPABILITY).ifPresent(h -> {
 			this.addRows(h);
@@ -56,20 +55,17 @@ public class CrateContainer extends Container {
     }
 
     private void layoutPlayerInventorySlots(int leftCol, int topRow) {
-        // Player inventory
-        addSlotBox(playerInventory, 9, leftCol, topRow, 9, 18, 3, 18);
-
-        // Hotbar
-        topRow += 58;
-        addSlotRange(playerInventory, 0, leftCol, topRow, 9, 18);
+        addSlotBox(this.playerInventory, 9, leftCol, topRow, 9, 18, 3, 18);
+        addSlotRange(this.playerInventory, 0, leftCol, topRow + 58, 9, 18);
     }
 
 
 	@Override
 	public boolean canInteractWith(PlayerEntity playerIn) {
-	     return !(playerEntity.getDistanceSq((double)tileEntity.getPos().getX() + 0.5D, (double)this.tileEntity.getPos().getY() + 0.5D, (double)this.tileEntity.getPos().getZ() + 0.5D) > 64.0D);
+	     return !(playerIn.getDistanceSq(this.tileEntity.getPos().getX() + 0.5D, this.tileEntity.getPos().getY() + 0.5D, this.tileEntity.getPos().getZ() + 0.5D) > 64.0D);
 	}
 	
+	@Override
 	public ItemStack transferStackInSlot(PlayerEntity playerIn, int index) {
 	      ItemStack itemstack = ItemStack.EMPTY;
 	      Slot slot = this.inventorySlots.get(index);

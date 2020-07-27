@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "minecraft:redstone_ore"
+  },
+  "result": "itnc:redstone_crystal",
+  "experience": 0.7,
+  "cookingtime": 100
+}

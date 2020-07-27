@@ -13,7 +13,7 @@ public class INCFeatures {
 	
 	@SubscribeEvent
 	public static void onFeaturesRegistry(final RegistryEvent.Register<Feature<?>> featureRegistryEvent) {
-		EXTENDED_ORE.setRegistryName("itnc:extended_ore");
+		EXTENDED_ORE.setRegistryName("itnc:extended_ore"); //$NON-NLS-1$
 		IForgeRegistry<Feature<?>> featureRegistry = featureRegistryEvent.getRegistry();
 		featureRegistry.register(EXTENDED_ORE);
 	}

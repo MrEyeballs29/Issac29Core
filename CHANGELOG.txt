@@ -1,3 +1,62 @@
+Version 1.1.2
+[Additions]
+- Added Wooden Buckets for Cool Fluids (Water, Oil, etc.)
+
+Version 1.1.1
+[Changes]
+- Flint and Iron can now be used for dispensers
+- Tanks can now render tootips about fluid amount and fluid name
+- Buckets can be filled/emptied on the tank. 
+
+Version 1.1.0
+[Additions]
+- Added Oil
+- Added Bronze Sets
+- Added Polished Stone Stairs and its recipes
+- All Dusts are Smeltable (Except Oil Shale)
+- Added Redstone Crystal
+- Added Fluid Tank
+- Added Flint and Iron
+
+[Changes]
+- Lead Axe attack damage is lower by half
+- Crates now detect comparator power.
+- Copper Tools have changed textures
+- Clean Up
+- Silver no longer is in the common ingots tag.
+- Redstone ore drops redstone crystals instead of dust.
+- Flint and Steel requires a bronze nugget instead of iron ingot.
+- Recipe Progressions can be required or not.
+
+[Fixes]
+- Fixed Nether Lead Ore Dropping Nether Iron Ore
+- Lead Axe attack speed is lower than silver axe attack speed
+- Crates can burn as smoker, furnace, and blast furnace fuels.
+- Polished Stone requires to unlock the Stone Brick recipe not Stone
+- All horse armors now limit stack to one.
+
+[Dev Changes]
+- Element API Changes
+
+Version 1.0.8
+[Changes]
+- All End and Nether Ores can be disabled. As mentioned by @Mouse0270
+
+Version 1.0.7
+[Changes]
+- All Common Ores can be disabled via configuration. As requested by @Mouse0270
+
+[Fixes]
+- Silver Sword is craftable. As @kwpugh saw this bug.
+
+Version 1.0.6
+[Fixes]
+- Fixed Server Issues
+
+Version 1.0.5
+[Fixes]
+- Fixed Server Crash
+
 Version 1.0.4
 [Additions]
 - Added Lead Tools and Armor
@@ -6,10 +65,14 @@ Version 1.0.4
 - Lead Plate is Tagged
 - Added 5 new Advancements
 - Added 6 Crates
-- Added Metal Rods
+- Added Metal Rods, Dusts, and Gears
+- Frames Are Craftable
 
 [Changes]
 - Silver Tools have lowered damage by 0.25
+
+[Fixes]
+- Lead Ingots are Seperate form Copper Ingots.
 
 [Dev Additions]
 - Added Chemistry API.

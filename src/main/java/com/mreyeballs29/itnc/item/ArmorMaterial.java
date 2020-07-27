@@ -16,14 +16,14 @@ public class ArmorMaterial implements IArmorMaterial {
 	public static final IArmorMaterial IRON = net.minecraft.item.ArmorMaterial.IRON;
 	public static final IArmorMaterial DIAMOND = net.minecraft.item.ArmorMaterial.DIAMOND;
 	
-	public static final IArmorMaterial COPPER = new ArmorMaterial("itnc:copper", 10, 1, 3, 4, 1, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 14,
+	public static final IArmorMaterial COPPER = new ArmorMaterial("itnc:copper", 10, 1, 3, 4, 1, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 14, //$NON-NLS-1$
 			Ingredient.fromItems(INCItems.COPPER_INGOT), 0.0F);
-	public static final IArmorMaterial SILVER = new ArmorMaterial("itnc:silver", 8, 2, 3, 4, 1, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 18,
+	public static final IArmorMaterial SILVER = new ArmorMaterial("itnc:silver", 8, 2, 3, 4, 1, SoundEvents.ITEM_ARMOR_EQUIP_GOLD, 18, //$NON-NLS-1$
 			Ingredient.fromItems(INCItems.SILVER_INGOT), 0.0F);
-	public static final IArmorMaterial LEAD = new ArmorMaterial("itnc:lead", 12, 2, 3, 4, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
+	public static final IArmorMaterial LEAD = new ArmorMaterial("itnc:lead", 11, 2, 3, 4, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11, //$NON-NLS-1$
 			Ingredient.fromItems(INCItems.LEAD_INGOT), 1.5F);
-	public static final IArmorMaterial BRONZE = new ArmorMaterial("itnc:bronze", 14, 2, 3, 5, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 11,
-			Ingredient.fromItems(INCItems.MAGNETIC_IRON_INGOT), 0.5F);
+	public static final IArmorMaterial BRONZE = new ArmorMaterial("itnc:bronze", 13, 2, 3, 5, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 13, //$NON-NLS-1$
+			Ingredient.fromItems(INCItems.BRONZE_INGOT), 0.5F);
 	
 	private float toughness;
 	private String name;

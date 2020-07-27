@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "#forge:minerals/coal",
-    "#forge:minerals/lignite"
+    "#forge:minerals/charcoal",
+    "#forge:minerals/lignite",
+    "#forge:minerals/redstone"
   ]
 }

@@ -8,6 +8,7 @@
 		"#forge:rods/copper",
 		"#forge:rods/tin",
 		"#forge:rods/silver",
-		"#forge:rods/lead"
+		"#forge:rods/lead",
+    	"#forge:rods/bronze"
 	]
 }

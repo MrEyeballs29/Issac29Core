@@ -1,0 +1,35 @@
+{
+  "parent": "itnc:metal_forging/root",
+  "display": {
+    "icon": {
+      "item": "itnc:bronze_ingot"
+    },
+    "title": {
+      "translate": "advancements.metal_forging.produce_bronze.title"
+    },
+    "description": {
+      "translate": "advancements.metal_forging.produce_bronze.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bronze_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:bronze_nugget"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bronze_nugget"
+    ]
+  ]
+}

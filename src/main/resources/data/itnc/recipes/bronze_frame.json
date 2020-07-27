@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "itnc:bronze_rod"
+    }
+  },
+  "result": {
+    "item": "itnc:bronze_frame",
+    "count": 4
+  }
+}

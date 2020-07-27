@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:bronze_mixture"
+    ]
+  },
+  "criteria": {
+    "has_copper_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:copper_nugget"
+          }
+        ]
+      }
+    },
+    "has_tin_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:tin_nugget"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:bronze_mixture"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_copper_nugget",
+      "has_the_recipe"
+    ],
+    [
+      "has_tin_nugget",
+      "has_the_recipe"
+    ]
+  ]
+}
