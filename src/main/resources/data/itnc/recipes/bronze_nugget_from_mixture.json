@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "itnc:bronze_mixture"
+    }
+  ],
+  "result": {
+    "item": "itnc:bronze_nugget"
+  }
+}

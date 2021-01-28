@@ -1,0 +1,9 @@
+{
+  "type": "itnc:mortar_and_pestling",
+  "input": {
+  	"item": "itnc:copper_ingot"
+  },
+  "result": {
+    "item": "itnc:copper_dust"
+  }
+}

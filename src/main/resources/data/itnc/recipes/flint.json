@@ -1,0 +1,9 @@
+{
+  "type": "itnc:mortar_and_pestling",
+  "input": {
+  	"item": "gravel"
+  },
+  "result": {
+    "item": "minecraft:flint"
+  }
+}

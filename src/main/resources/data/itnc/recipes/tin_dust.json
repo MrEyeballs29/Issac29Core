@@ -1,0 +1,9 @@
+{
+  "type": "itnc:mortar_and_pestling",
+  "input": {
+  	"item": "itnc:tin_ingot"
+  },
+  "result": {
+    "item": "itnc:tin_dust"
+  }
+}

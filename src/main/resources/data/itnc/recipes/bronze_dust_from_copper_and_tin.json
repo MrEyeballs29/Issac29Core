@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "itnc:copper_dust"
+    },
+    {
+      "item": "itnc:copper_dust"
+    },
+    {
+      "item": "itnc:copper_dust"
+    },
+    {
+      "item": "itnc:tin_dust"
+    }
+  ],
+  "result": {
+    "item": "itnc:bronze_dust",
+    "count": 4
+  }
+}

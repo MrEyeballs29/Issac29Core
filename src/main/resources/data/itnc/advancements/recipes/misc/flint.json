@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:flint"
+    ]
+  },
+  "criteria": {
+    "has_mortar_and_any_pestles": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "itnc:mortar_and_any_pestles"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:flint"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_mortar_and_any_pestles",
+      "has_the_recipe"
+    ]
+  ]
+}
