@@ -1,0 +1,46 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "itnc:bronze_dust_from_copper_and_tin"
+    ]
+  },
+  "criteria": {
+    "has_copper_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:copper_dust"
+          }
+        ]
+      }
+    },
+    "has_tin_dust": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:tin_dust"
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "itnc:bronze_dust"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_copper_dust",
+      "has_the_recipe"
+    ],
+    [
+      "has_tin_dust",
+      "has_the_recipe"
+    ]
+  ]
+}
