@@ -173,6 +173,9 @@ public class INCItems {
 	public static final Item REDSTONE_CRYSTAL = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "redstone_crystal")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item FLINT_AND_IRON = new IgnitionItem(new Properties().maxDamage(32).group(ItemGroup.TOOLS)).setRegistryName(new ResourceLocation("itnc", "flint_and_iron")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item OIL_BUCKET = new BucketItem(INCFluids.OIL.delegate, new Properties().group(ItemGroup.MISC).maxStackSize(1).containerItem(Items.BUCKET)).setRegistryName("itnc", "oil_bucket"); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item STONE_BOWL = create(ItemGroup.MISC, new ResourceLocation("itnc", "stone_bowl")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item MORTAR_AND_FLINT_PESTLE = new MortarItem(create(ItemGroup.TOOLS), 78).setRegistryName("itnc", "mortar_and_flint_pestle"); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item MORTAR_AND_IRON_PESTLE = new MortarItem(create(ItemGroup.TOOLS), 250);
 	
 	/**
 	 * This organizes by the relavant of each item/block. Blocks come first then items.
@@ -241,6 +244,8 @@ public class INCItems {
 		GENERIC.add(IRON_GEAR);
 		GENERIC.add(GOLD_GEAR);
 		GENERIC.add(REDSTONE_CRYSTAL);
+		GENERIC.add(STONE_BOWL);
+		// Modded items must be after vanilla plus components
 		GENERIC.add(COPPER_INGOT);
 		GENERIC.add(TIN_INGOT);
 		GENERIC.add(SILVER_INGOT);
@@ -285,6 +290,13 @@ public class INCItems {
 	     * Flint and Tinder items should be after hoes
 	     */
 	    GENERIC.add(FLINT_AND_IRON);
+	    /*
+	     * Other Tool Related Items go here
+	     */
+	    GENERIC.add(MORTAR_AND_FLINT_PESTLE);
+	    /*
+	     * Armors including horse armors go here.
+	     */
 		GENERIC.add(COPPER_HELMET);
 		GENERIC.add(COPPER_CHESTPLATE);
 		GENERIC.add(COPPER_LEGGINGS);
