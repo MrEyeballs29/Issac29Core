@@ -4,6 +4,7 @@ import org.lwjgl.opengl.GL11;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 import com.mreyeballs29.itnc.inventory.TankContainer;
+import com.mreyeballs29.itnc.tileentity.TankTileEntity;
 
 import net.minecraft.client.gui.screen.inventory.ContainerScreen;
 import net.minecraft.client.renderer.BufferBuilder;
@@ -15,6 +16,8 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.PlayerContainer;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraftforge.fluids.FluidStack;
 
 public class TankScreen extends ContainerScreen<TankContainer> {
@@ -37,11 +40,23 @@ public class TankScreen extends ContainerScreen<TankContainer> {
 	 * @param mouseX  
 	 * @param mouseY 
 	 */
-	private void renderFluidTooltip(int mouseX, int mouseY) {
-		this.getTitle();
-		return;
+	protected void renderFluidTooltip(int mouseX, int mouseY) {
+		TankTileEntity tank = this.container.getTileEntity();
+		if (isPointInRegion(72, 17, 32, 48, mouseX, mouseY)) {
+			ITextComponent textComponent = format(tank.getTank().getFluid(), tank.getTank().getCapacity());
+			ITextComponent unit = new TranslationTextComponent("unit.forge.fluid"); //$NON-NLS-1$
+			this.renderTooltip(textComponent.getFormattedText() + ' ' + unit.getFormattedText(), mouseX, mouseY);
+		}
 	}
 	
+	protected static ITextComponent format(FluidStack stack, int max) {
+		String s1 = String.format("%,d", Integer.valueOf(stack.getAmount())); //$NON-NLS-1$
+		String s2 = String.format("%,d", Integer.valueOf(max)); //$NON-NLS-1$
+		ITextComponent component;
+		ITextComponent name = stack.getDisplayName();
+		component = new StringTextComponent(String.format("%s: %s / %s", name.getFormattedText(), s1, s2)); //$NON-NLS-1$
+		return component;
+	}
 	
 	@SuppressWarnings({ "deprecation", "resource" })
 	private void drawFluidTexture(FluidStack stack, double x, double y, double width1, double height1) {
