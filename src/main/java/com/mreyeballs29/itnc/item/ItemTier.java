@@ -11,10 +11,12 @@ public class ItemTier implements IItemTier {
 	public static final IItemTier GOLD = net.minecraft.item.ItemTier.GOLD;
 	public static final IItemTier DIAMOND = net.minecraft.item.ItemTier.DIAMOND;
 	
-	public static final IItemTier COPPER = new ItemTier("Copper", 96, 5.0F, 1.5F, 1, 16, Ingredient.fromItems(INCItems.COPPER_INGOT)); //$NON-NLS-1$
+	public static final IItemTier COPPER = new ItemTier("Copper", 92, 5.0F, 1.5F, 1, 16, Ingredient.fromItems(INCItems.COPPER_INGOT)); //$NON-NLS-1$
 	public static final IItemTier SILVER = new ItemTier("Silver", 56, 6.5F, 1.0F, 1, 19, Ingredient.fromItems(INCItems.SILVER_INGOT)); //$NON-NLS-1$
-	public static final IItemTier LEAD = new ItemTier("Lead", 150, 4.5F, 1.5F, 1, 8, Ingredient.fromItems(INCItems.LEAD_INGOT)); //$NON-NLS-1$
+	public static final IItemTier LEAD = new ItemTier("Lead", 142, 4.5F, 1.5F, 1, 8, Ingredient.fromItems(INCItems.LEAD_INGOT)); //$NON-NLS-1$
 	public static final IItemTier BRONZE = new ItemTier("Bronze", 188, 5.5F, 2.0F, 2, 14, Ingredient.fromItems(INCItems.BRONZE_INGOT)); //$NON-NLS-1$
+	
+	public static final IItemTier RED_DIAMOND = new ItemTier("Red Diamond", 1832, 9.0F, 4.0F, 4, 18, Ingredient.fromItems(INCItems.COPPER_FRAME)); //$NON-NLS-1$
 	
 	private final String name;
 	private final int maxUses;

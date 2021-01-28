@@ -173,6 +173,17 @@ public class INCItems {
 	public static final Item REDSTONE_CRYSTAL = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "redstone_crystal")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item FLINT_AND_IRON = new IgnitionItem(new Properties().maxDamage(32).group(ItemGroup.TOOLS)).setRegistryName(new ResourceLocation("itnc", "flint_and_iron")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item OIL_BUCKET = new BucketItem(INCFluids.OIL.delegate, new Properties().group(ItemGroup.MISC).maxStackSize(1).containerItem(Items.BUCKET)).setRegistryName("itnc", "oil_bucket"); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "red_diamond")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_SHOVEL = createShovel(ItemTier.RED_DIAMOND, ItemGroup.TOOLS, new ResourceLocation("itnc","red_diamond")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_PICKAXE = createPickaxe(ItemTier.RED_DIAMOND, ItemGroup.TOOLS, new ResourceLocation("itnc","red_diamond")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_AXE = createAxe(ItemTier.RED_DIAMOND, 5.0F, -3.0F, ItemGroup.TOOLS, new ResourceLocation("itnc","red_diamond")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_SWORD = createSword(ItemTier.RED_DIAMOND, ItemGroup.COMBAT, new ResourceLocation("itnc","red_diamond")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_HOE = createHoe(ItemTier.RED_DIAMOND, -1.0F, ItemGroup.TOOLS, new ResourceLocation("itnc","red_diamond")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_HELMET = createArmor(ArmorMaterial.RED_DIAMOND, EquipmentSlotType.HEAD, ItemGroup.COMBAT, new ResourceLocation("itnc", "red_diamond_helmet")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_CHESTPLATE = createArmor(ArmorMaterial.RED_DIAMOND, EquipmentSlotType.CHEST, ItemGroup.COMBAT, new ResourceLocation("itnc", "red_diamond_chestplate")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_LEGGINGS = createArmor(ArmorMaterial.RED_DIAMOND, EquipmentSlotType.LEGS, ItemGroup.COMBAT, new ResourceLocation("itnc", "red_diamond_leggings")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_BOOTS = createArmor(ArmorMaterial.RED_DIAMOND, EquipmentSlotType.FEET, ItemGroup.COMBAT, new ResourceLocation("itnc", "red_diamond_boots")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item RED_DIAMOND_HORSE_ARMOR = createHorseArmor(14, new ResourceLocation("itnc:textures/entity/horse/armor/horse_armor_red_diamond.png"), ItemGroup.MISC, new ResourceLocation("itnc", "red_diamond_horse_armor")); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 	public static final Item STONE_BOWL = create(ItemGroup.MISC, new ResourceLocation("itnc", "stone_bowl")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item MORTAR_AND_FLINT_PESTLE = new MortarItem(create(ItemGroup.TOOLS), 78).setRegistryName("itnc", "mortar_and_flint_pestle"); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item MORTAR_AND_IRON_PESTLE = new MortarItem(create(ItemGroup.TOOLS), 250);
@@ -258,6 +269,7 @@ public class INCItems {
 		GENERIC.add(LEAD_NUGGET);
 		GENERIC.add(BRONZE_NUGGET);
 		GENERIC.add(LIGNITE);
+		GENERIC.add(RED_DIAMOND);
 		GENERIC.add(OIL_BUCKET);
 		GENERIC.add(COPPER_DUST);
 		GENERIC.add(TIN_DUST);
@@ -282,10 +294,15 @@ public class INCItems {
 		GENERIC.add(BRONZE_PICKAXE);
 		GENERIC.add(BRONZE_AXE);
 		GENERIC.add(BRONZE_SWORD);
+		GENERIC.add(RED_DIAMOND_SHOVEL);
+		GENERIC.add(RED_DIAMOND_PICKAXE);
+		GENERIC.add(RED_DIAMOND_AXE);
+		GENERIC.add(RED_DIAMOND_SWORD);
 		GENERIC.add(COPPER_HOE);
 	    GENERIC.add(SILVER_HOE);
 	    GENERIC.add(LEAD_HOE);
 	    GENERIC.add(BRONZE_HOE);
+	    GENERIC.add(RED_DIAMOND_HOE);
 	    /*
 	     * Flint and Tinder items should be after hoes
 	     */
@@ -313,10 +330,15 @@ public class INCItems {
 		GENERIC.add(BRONZE_CHESTPLATE);
 		GENERIC.add(BRONZE_LEGGINGS);
 		GENERIC.add(BRONZE_BOOTS);
+		GENERIC.add(RED_DIAMOND_HELMET);
+		GENERIC.add(RED_DIAMOND_CHESTPLATE);
+		GENERIC.add(RED_DIAMOND_LEGGINGS);
+		GENERIC.add(RED_DIAMOND_BOOTS);
 		GENERIC.add(COPPER_HORSE_ARMOR);
 		GENERIC.add(SILVER_HORSE_ARMOR);
 		GENERIC.add(LEAD_HORSE_ARMOR);
 		GENERIC.add(BRONZE_HORSE_ARMOR);
+		GENERIC.add(RED_DIAMOND_HORSE_ARMOR);
 		/*
 		 * Other components should be after horse armors
 		 */

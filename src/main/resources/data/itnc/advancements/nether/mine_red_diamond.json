@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:nether/root",
+  "display": {
+    "icon": {
+      "item": "itnc:red_diamond"
+    },
+    "title": {
+      "translate": "advancements.nether.mine_red_diamond.title"
+    },
+    "description": {
+      "translate": "advancements.nether.mine_red_diamond.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "red_diamond": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "itnc:red_diamond"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "red_diamond"
+    ]
+  ]
+}

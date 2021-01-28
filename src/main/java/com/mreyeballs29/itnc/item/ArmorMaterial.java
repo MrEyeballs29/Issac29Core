@@ -2,6 +2,7 @@ package com.mreyeballs29.itnc.item;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
@@ -24,6 +25,9 @@ public class ArmorMaterial implements IArmorMaterial {
 			Ingredient.fromItems(INCItems.LEAD_INGOT), 1.5F);
 	public static final IArmorMaterial BRONZE = new ArmorMaterial("itnc:bronze", 13, 2, 3, 5, 2, SoundEvents.ITEM_ARMOR_EQUIP_IRON, 13, //$NON-NLS-1$
 			Ingredient.fromItems(INCItems.BRONZE_INGOT), 0.5F);
+	
+	public static final IArmorMaterial RED_DIAMOND = new ArmorMaterial("itnc:red_diamond", 45, 4, 8, 10, 4, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND, 15,  //$NON-NLS-1$
+			Ingredient.fromItems(Items.DIAMOND), 3.0F);
 	
 	private float toughness;
 	private String name;
