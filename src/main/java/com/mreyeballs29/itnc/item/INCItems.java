@@ -137,7 +137,7 @@ public class INCItems {
 	public static final Item SILVER_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "silver_gear")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item LIGNITE = new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName(new ResourceLocation("itnc", "lignite")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item MAGNETIC_IRON_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "magnetic_iron_ingot")); //$NON-NLS-1$ //$NON-NLS-2$
-	public static final Item OILSHALE_DUST =new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName("itnc", "oilshale_dust"); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item OILSHALE_DUST = new FuelItem(new Properties().group(ItemGroup.MATERIALS), 400).setRegistryName("itnc", "oilshale_dust"); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item LEAD_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_ingot")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item LEAD_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_nugget")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item LEAD_PLATE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_plate")); //$NON-NLS-1$ //$NON-NLS-2$
@@ -153,7 +153,7 @@ public class INCItems {
 	public static final Item LEAD_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_dust")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item LEAD_ROD = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_rod")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item LEAD_GEAR = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "lead_gear")); //$NON-NLS-1$ //$NON-NLS-2$
-	public static final Item BRONZE_MIXTURE = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "bronze_mixture")); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Item BRONZE_MIXTURE = new DeprecatedItem(create(ItemGroup.MATERIALS), "craft").setRegistryName("itnc", "bronze_mixture"); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
 	public static final Item BRONZE_DUST = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "bronze_dust")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item BRONZE_INGOT = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "bronze_ingot")); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Item BRONZE_NUGGET = create(ItemGroup.MATERIALS, new ResourceLocation("itnc", "bronze_nugget")); //$NON-NLS-1$ //$NON-NLS-2$
@@ -218,7 +218,7 @@ public class INCItems {
 		BLOCK.add(NETHER_GOLD_ORE);
 		BLOCK.add(NETHER_COPPER_ORE);
 		/*
-		 * Although lead comes after silver it is still a nether ore. 
+		 * Although lead comes after silver, it is still a nether ore. 
 		 */
 		BLOCK.add(NETHER_LEAD_ORE);
 		BLOCK.add(END_TIN_ORE);
@@ -239,6 +239,9 @@ public class INCItems {
 		BLOCK.add(GREEN_WOOL_WIRE);
 		BLOCK.add(RED_WOOL_WIRE);
 		BLOCK.add(BLACK_WOOL_WIRE);
+		/*
+		 * Tile entity blocks go here
+		 */
 		BLOCK.add(OAK_CRATE);
 		BLOCK.add(SPRUCE_CRATE);
 		BLOCK.add(BIRCH_CRATE);

@@ -9,6 +9,7 @@ import net.minecraft.block.Block;
 import net.minecraft.block.Block.Properties;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.FireBlock;
+import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.SlabBlock;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.StairsBlock;
@@ -79,7 +80,7 @@ public class INCBlocks {
 	public static final Block ACACIA_CRATE = new CrateBlock(Properties.from(Blocks.ACACIA_PLANKS)).setRegistryName("itnc", "acacia_crate"); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Block DARK_OAK_CRATE = new CrateBlock(Properties.from(Blocks.DARK_OAK_PLANKS)).setRegistryName("itnc", "dark_oak_crate"); //$NON-NLS-1$ //$NON-NLS-2$
 	public static final Block TANK = new TankBlock(Properties.from(Blocks.STONE).hardnessAndResistance(3.5F)).setRegistryName("itnc", "tank"); //$NON-NLS-1$ //$NON-NLS-2$
-	public static final Block OIL = new OilFluidBlock(()->INCFluids.OIL, Properties.create(Material.WATER, MaterialColor.BLACK).hardnessAndResistance(50.0F).doesNotBlockMovement().noDrops()).setRegistryName("itnc", "oil"); //$NON-NLS-1$ //$NON-NLS-2$
+	public static final Block OIL = new FlowingFluidBlock(()->INCFluids.OIL, Properties.create(Material.WATER, MaterialColor.BLACK).hardnessAndResistance(50.0F).doesNotBlockMovement().noDrops()).setRegistryName("itnc", "oil"); //$NON-NLS-1$ //$NON-NLS-2$
 	
 	private static void initalizeBlocks() {
 		LIST.add(POLISHED_STONE);
@@ -196,5 +197,6 @@ public class INCBlocks {
 		fire.setFireInfo(JUNGLE_CRATE, 5, 20);
 		fire.setFireInfo(ACACIA_CRATE, 5, 20);
 		fire.setFireInfo(DARK_OAK_CRATE, 5, 20);
+		fire.setFireInfo(OIL, 20, 5);
 	}
 }
